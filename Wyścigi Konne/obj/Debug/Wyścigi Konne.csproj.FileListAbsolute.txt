@@ -1,0 +1,11 @@
+C:\Users\wegne\source\repos\GulsonZiomal\Praktyki-\Wyścigi Konne\bin\Debug\Wyścigi Konne.exe.config
+C:\Users\wegne\source\repos\GulsonZiomal\Praktyki-\Wyścigi Konne\bin\Debug\Wyścigi Konne.exe
+C:\Users\wegne\source\repos\GulsonZiomal\Praktyki-\Wyścigi Konne\bin\Debug\Wyścigi Konne.pdb
+C:\Users\wegne\source\repos\GulsonZiomal\Praktyki-\Wyścigi Konne\obj\Debug\Wyścigi Konne.csproj.AssemblyReference.cache
+C:\Users\wegne\source\repos\GulsonZiomal\Praktyki-\Wyścigi Konne\obj\Debug\Wyścigi Konne.csproj.SuggestedBindingRedirects.cache
+C:\Users\wegne\source\repos\GulsonZiomal\Praktyki-\Wyścigi Konne\obj\Debug\Wyścigi_Konne.Form1.resources
+C:\Users\wegne\source\repos\GulsonZiomal\Praktyki-\Wyścigi Konne\obj\Debug\Wyścigi_Konne.Properties.Resources.resources
+C:\Users\wegne\source\repos\GulsonZiomal\Praktyki-\Wyścigi Konne\obj\Debug\Wyścigi Konne.csproj.GenerateResource.cache
+C:\Users\wegne\source\repos\GulsonZiomal\Praktyki-\Wyścigi Konne\obj\Debug\Wyścigi Konne.csproj.CoreCompileInputs.cache
+C:\Users\wegne\source\repos\GulsonZiomal\Praktyki-\Wyścigi Konne\obj\Debug\Wyścigi Konne.exe
+C:\Users\wegne\source\repos\GulsonZiomal\Praktyki-\Wyścigi Konne\obj\Debug\Wyścigi Konne.pdb

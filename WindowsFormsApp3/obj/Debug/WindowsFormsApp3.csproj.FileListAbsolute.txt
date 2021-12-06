@@ -1,0 +1,11 @@
+C:\Users\wegne\source\repos\GulsonZiomal\Praktyki-\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe.config
+C:\Users\wegne\source\repos\GulsonZiomal\Praktyki-\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe
+C:\Users\wegne\source\repos\GulsonZiomal\Praktyki-\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.pdb
+C:\Users\wegne\source\repos\GulsonZiomal\Praktyki-\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.AssemblyReference.cache
+C:\Users\wegne\source\repos\GulsonZiomal\Praktyki-\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.SuggestedBindingRedirects.cache
+C:\Users\wegne\source\repos\GulsonZiomal\Praktyki-\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Form1.resources
+C:\Users\wegne\source\repos\GulsonZiomal\Praktyki-\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Properties.Resources.resources
+C:\Users\wegne\source\repos\GulsonZiomal\Praktyki-\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.GenerateResource.cache
+C:\Users\wegne\source\repos\GulsonZiomal\Praktyki-\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.CoreCompileInputs.cache
+C:\Users\wegne\source\repos\GulsonZiomal\Praktyki-\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.exe
+C:\Users\wegne\source\repos\GulsonZiomal\Praktyki-\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.pdb

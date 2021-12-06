@@ -1,0 +1,11 @@
+C:\Users\wegne\source\repos\GulsonZiomal\Praktyki-\Ul\bin\Debug\Ul.exe.config
+C:\Users\wegne\source\repos\GulsonZiomal\Praktyki-\Ul\bin\Debug\Ul.exe
+C:\Users\wegne\source\repos\GulsonZiomal\Praktyki-\Ul\bin\Debug\Ul.pdb
+C:\Users\wegne\source\repos\GulsonZiomal\Praktyki-\Ul\obj\Debug\Ul.csproj.AssemblyReference.cache
+C:\Users\wegne\source\repos\GulsonZiomal\Praktyki-\Ul\obj\Debug\Ul.csproj.SuggestedBindingRedirects.cache
+C:\Users\wegne\source\repos\GulsonZiomal\Praktyki-\Ul\obj\Debug\Ul.Form1.resources
+C:\Users\wegne\source\repos\GulsonZiomal\Praktyki-\Ul\obj\Debug\Ul.Properties.Resources.resources
+C:\Users\wegne\source\repos\GulsonZiomal\Praktyki-\Ul\obj\Debug\Ul.csproj.GenerateResource.cache
+C:\Users\wegne\source\repos\GulsonZiomal\Praktyki-\Ul\obj\Debug\Ul.csproj.CoreCompileInputs.cache
+C:\Users\wegne\source\repos\GulsonZiomal\Praktyki-\Ul\obj\Debug\Ul.exe
+C:\Users\wegne\source\repos\GulsonZiomal\Praktyki-\Ul\obj\Debug\Ul.pdb

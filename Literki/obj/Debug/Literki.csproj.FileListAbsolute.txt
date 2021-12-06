@@ -1,0 +1,11 @@
+C:\Users\wegne\source\repos\GulsonZiomal\Praktyki-\Literki\bin\Debug\Literki.exe.config
+C:\Users\wegne\source\repos\GulsonZiomal\Praktyki-\Literki\bin\Debug\Literki.exe
+C:\Users\wegne\source\repos\GulsonZiomal\Praktyki-\Literki\bin\Debug\Literki.pdb
+C:\Users\wegne\source\repos\GulsonZiomal\Praktyki-\Literki\obj\Debug\Literki.csproj.AssemblyReference.cache
+C:\Users\wegne\source\repos\GulsonZiomal\Praktyki-\Literki\obj\Debug\Literki.csproj.SuggestedBindingRedirects.cache
+C:\Users\wegne\source\repos\GulsonZiomal\Praktyki-\Literki\obj\Debug\Literki.Form1.resources
+C:\Users\wegne\source\repos\GulsonZiomal\Praktyki-\Literki\obj\Debug\Literki.Properties.Resources.resources
+C:\Users\wegne\source\repos\GulsonZiomal\Praktyki-\Literki\obj\Debug\Literki.csproj.GenerateResource.cache
+C:\Users\wegne\source\repos\GulsonZiomal\Praktyki-\Literki\obj\Debug\Literki.csproj.CoreCompileInputs.cache
+C:\Users\wegne\source\repos\GulsonZiomal\Praktyki-\Literki\obj\Debug\Literki.exe
+C:\Users\wegne\source\repos\GulsonZiomal\Praktyki-\Literki\obj\Debug\Literki.pdb

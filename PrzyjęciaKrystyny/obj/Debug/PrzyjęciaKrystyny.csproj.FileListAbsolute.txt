@@ -1,0 +1,11 @@
+C:\Users\wegne\source\repos\GulsonZiomal\Praktyki-\PrzyjęciaKrystyny\bin\Debug\PrzyjęciaKrystyny.exe.config
+C:\Users\wegne\source\repos\GulsonZiomal\Praktyki-\PrzyjęciaKrystyny\bin\Debug\PrzyjęciaKrystyny.exe
+C:\Users\wegne\source\repos\GulsonZiomal\Praktyki-\PrzyjęciaKrystyny\bin\Debug\PrzyjęciaKrystyny.pdb
+C:\Users\wegne\source\repos\GulsonZiomal\Praktyki-\PrzyjęciaKrystyny\obj\Debug\PrzyjęciaKrystyny.csproj.AssemblyReference.cache
+C:\Users\wegne\source\repos\GulsonZiomal\Praktyki-\PrzyjęciaKrystyny\obj\Debug\PrzyjęciaKrystyny.csproj.SuggestedBindingRedirects.cache
+C:\Users\wegne\source\repos\GulsonZiomal\Praktyki-\PrzyjęciaKrystyny\obj\Debug\PrzyjęciaKrystyny.Form1.resources
+C:\Users\wegne\source\repos\GulsonZiomal\Praktyki-\PrzyjęciaKrystyny\obj\Debug\PrzyjęciaKrystyny.Properties.Resources.resources
+C:\Users\wegne\source\repos\GulsonZiomal\Praktyki-\PrzyjęciaKrystyny\obj\Debug\PrzyjęciaKrystyny.csproj.GenerateResource.cache
+C:\Users\wegne\source\repos\GulsonZiomal\Praktyki-\PrzyjęciaKrystyny\obj\Debug\PrzyjęciaKrystyny.csproj.CoreCompileInputs.cache
+C:\Users\wegne\source\repos\GulsonZiomal\Praktyki-\PrzyjęciaKrystyny\obj\Debug\PrzyjęciaKrystyny.exe
+C:\Users\wegne\source\repos\GulsonZiomal\Praktyki-\PrzyjęciaKrystyny\obj\Debug\PrzyjęciaKrystyny.pdb
