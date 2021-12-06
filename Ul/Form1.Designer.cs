@@ -106,6 +106,7 @@
             this.nextShift.TabIndex = 1;
             this.nextShift.Text = "Przepracuj następną zmiane";
             this.nextShift.UseVisualStyleBackColor = true;
+            this.nextShift.Click += new System.EventHandler(this.nextShift_Click_1);
             // 
             // report
             // 
