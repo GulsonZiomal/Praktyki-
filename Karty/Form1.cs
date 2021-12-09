@@ -8,26 +8,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ModelDomu
+namespace Karty
 {
     public partial class Form1 : Form
     {
-        private RoomWithDoor livingRoom;
-
+        Random random = new Random();
         public Form1()
         {
             InitializeComponent();
-            CreateObjects();
-            MoveToANewLocation(livingRoom);
         }
 
-        private void CreateObjects()
+        private void button1_Click(object sender, EventArgs e)
         {
-            livingRoom = new RoomWithDoor("Salon", "antyczny dywan", "dębowe drzwi z mosiężną klamką");
-        }
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
+            Card card = new Card((Suits)random.Next(4), (Values)random.Next(1, 14));
+            MessageBox.Show(card.Name);
         }
     }
 }
