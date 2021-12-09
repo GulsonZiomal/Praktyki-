@@ -25,5 +25,6 @@ namespace Karty
             Deck deck1 = new Deck();
             deck1.PrintCards();
         }
+        
     }
 }
