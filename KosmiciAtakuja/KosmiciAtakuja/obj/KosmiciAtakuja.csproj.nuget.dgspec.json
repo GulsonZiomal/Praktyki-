@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\wegne\\source\\repos\\KosmiciAtakuja\\KosmiciAtakuja\\KosmiciAtakuja.csproj": {}
+    "C:\\Users\\wegne\\source\\repos\\GulsonZiomal\\Praktyki-\\KosmiciAtakuja\\KosmiciAtakuja\\KosmiciAtakuja.csproj": {}
   },
   "projects": {
-    "C:\\Users\\wegne\\source\\repos\\KosmiciAtakuja\\KosmiciAtakuja\\KosmiciAtakuja.csproj": {
+    "C:\\Users\\wegne\\source\\repos\\GulsonZiomal\\Praktyki-\\KosmiciAtakuja\\KosmiciAtakuja\\KosmiciAtakuja.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\wegne\\source\\repos\\KosmiciAtakuja\\KosmiciAtakuja\\KosmiciAtakuja.csproj",
+        "projectUniqueName": "C:\\Users\\wegne\\source\\repos\\GulsonZiomal\\Praktyki-\\KosmiciAtakuja\\KosmiciAtakuja\\KosmiciAtakuja.csproj",
         "projectName": "KosmiciAtakuja",
-        "projectPath": "C:\\Users\\wegne\\source\\repos\\KosmiciAtakuja\\KosmiciAtakuja\\KosmiciAtakuja.csproj",
+        "projectPath": "C:\\Users\\wegne\\source\\repos\\GulsonZiomal\\Praktyki-\\KosmiciAtakuja\\KosmiciAtakuja\\KosmiciAtakuja.csproj",
         "packagesPath": "C:\\Users\\wegne\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\wegne\\source\\repos\\KosmiciAtakuja\\KosmiciAtakuja\\obj\\",
+        "outputPath": "C:\\Users\\wegne\\source\\repos\\GulsonZiomal\\Praktyki-\\KosmiciAtakuja\\KosmiciAtakuja\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

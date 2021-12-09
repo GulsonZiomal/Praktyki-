@@ -8,10 +8,10 @@ namespace Karty
 {
     public enum Suits
     {
-        Spades,
-        Clubs,
         Diamonds,
-        Hearts
+        Hearts,
+        Spades,
+        Clubs
     }
     public enum Values
     {
