@@ -78,7 +78,7 @@
             this.player.BackColor = System.Drawing.Color.Transparent;
             this.player.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("player.BackgroundImage")));
             this.player.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.player.Location = new System.Drawing.Point(827, 224);
+            this.player.Location = new System.Drawing.Point(809, 219);
             this.player.Name = "player";
             this.player.Size = new System.Drawing.Size(54, 55);
             this.player.TabIndex = 0;
