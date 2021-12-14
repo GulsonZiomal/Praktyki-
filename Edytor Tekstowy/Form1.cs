@@ -20,38 +20,40 @@ namespace Edytor_Tekstowy
 
         string filePath = string.Empty;
         int counter = 0;
+        string[] line = new string[1000];
+
         private void button1_Click(object sender, EventArgs e)
         {
             var fileContent = string.Empty;
             OpenFileDialog ofd = new OpenFileDialog();
-            
-                ofd.InitialDirectory = "c:\\";
-                ofd.Filter = "txt files (*.txt)|*.txt";
-                ofd.FilterIndex = 2;
-                ofd.RestoreDirectory = true;
 
-                if (ofd.ShowDialog() == DialogResult.OK)
+            ofd.InitialDirectory = "c:\\";
+            ofd.FilterIndex = 2;
+            ofd.RestoreDirectory = true;
+
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
+                filePath = ofd.FileName;
+
+                var fileStream = ofd.OpenFile();
+
+                using (StreamReader reader = new StreamReader(fileStream))
                 {
-                    filePath = ofd.FileName;
-
-                    var fileStream = ofd.OpenFile();
-
-                    using (StreamReader reader = new StreamReader(fileStream))
-                    {
-                        fileContent = reader.ReadToEnd();
-                    }
+                    fileContent = reader.ReadToEnd();
                 }
+            }
             var name = filePath.Split('.');
             if (name[1] == "txt")
             {
                 using (StreamReader file = new StreamReader(ofd.FileName))
                 {
+                    coWPliku.Text = "";
                     string ln;
 
-                    coWPliku.Text = "";
-                    while ((ln = file.ReadLine()) != null && counter<1000)
+                    while ((ln = file.ReadLine()) != null && counter < 1000)
                     {
-                        coWPliku.Text += ln + "\n";
+                        line[counter] = ln;
+                        coWPliku.Text += line[counter] + "\n";
                         counter++;
                     }
                     file.Close();
@@ -67,7 +69,7 @@ namespace Edytor_Tekstowy
             {
                 writer.WriteLine(coWPliku.Text);
             }
-            
+
         }
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
@@ -86,10 +88,27 @@ namespace Edytor_Tekstowy
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if(radioButton2.Checked == false && radioButton1.Checked == true)
+            if (radioButton2.Checked == false && radioButton1.Checked == true)
             {
-                for(int i = 0; i < counter; i++)
-                Console.WriteLine(coWPliku.Text.IndexOf(textBox1.Text, i, 1000));
+                znaleziono.Text = "Wyrażenia w linijce/kach: ";
+                for (int i = 0; i < counter; i++)
+                {
+                    if (line[i].IndexOf(textBox1.Text, 0, line[i].Length) != -1)
+                    {
+                        int j = i + 1;
+                        znaleziono.Text += " " + j;
+                    }
+                }
+            }
+            else
+            {
+                coWPliku.Text = "";
+                for (int i = 0; i < counter; i++)
+                {
+                    var replacement = line[i].Replace(textBox1.Text, textBox2.Text);
+                    line[i] = replacement;
+                    coWPliku.Text += (replacement) + "\n";
+                }
             }
         }
     }

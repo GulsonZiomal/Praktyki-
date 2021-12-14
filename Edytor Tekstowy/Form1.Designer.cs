@@ -30,7 +30,6 @@
         {
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.button1 = new System.Windows.Forms.Button();
-            this.name = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveButton = new System.Windows.Forms.Button();
             this.coWPliku = new System.Windows.Forms.RichTextBox();
@@ -42,6 +41,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
+            this.znaleziono = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // button1
@@ -54,21 +54,13 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // name
-            // 
-            this.name.Location = new System.Drawing.Point(136, 13);
-            this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(652, 23);
-            this.name.TabIndex = 1;
-            this.name.Text = "Nazwa pliku";
-            // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // saveButton
             // 
-            this.saveButton.Location = new System.Drawing.Point(794, 386);
+            this.saveButton.Location = new System.Drawing.Point(794, 452);
             this.saveButton.Name = "saveButton";
             this.saveButton.Size = new System.Drawing.Size(359, 52);
             this.saveButton.TabIndex = 3;
@@ -80,14 +72,14 @@
             // 
             this.coWPliku.Location = new System.Drawing.Point(13, 43);
             this.coWPliku.Name = "coWPliku";
-            this.coWPliku.Size = new System.Drawing.Size(775, 366);
+            this.coWPliku.Size = new System.Drawing.Size(775, 461);
             this.coWPliku.TabIndex = 4;
             this.coWPliku.Text = "";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 422);
+            this.label1.Location = new System.Drawing.Point(10, 507);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(63, 16);
             this.label1.TabIndex = 5;
@@ -152,19 +144,29 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(798, 152);
+            this.button2.Location = new System.Drawing.Point(794, 152);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(355, 23);
+            this.button2.Size = new System.Drawing.Size(359, 23);
             this.button2.TabIndex = 14;
             this.button2.Text = "Wykonaj!";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // znaleziono
+            // 
+            this.znaleziono.Location = new System.Drawing.Point(794, 194);
+            this.znaleziono.Name = "znaleziono";
+            this.znaleziono.ReadOnly = true;
+            this.znaleziono.Size = new System.Drawing.Size(359, 252);
+            this.znaleziono.TabIndex = 15;
+            this.znaleziono.Text = "";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1165, 450);
+            this.ClientSize = new System.Drawing.Size(1165, 532);
+            this.Controls.Add(this.znaleziono);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -175,7 +177,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.coWPliku);
             this.Controls.Add(this.saveButton);
-            this.Controls.Add(this.name);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -188,7 +189,6 @@
 
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label name;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Button saveButton;
         private System.Windows.Forms.RichTextBox coWPliku;
@@ -200,6 +200,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.RichTextBox znaleziono;
     }
 }
 
