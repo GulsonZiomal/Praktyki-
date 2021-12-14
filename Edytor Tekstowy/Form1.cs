@@ -20,9 +20,10 @@ namespace Edytor_Tekstowy
 
         string filePath = string.Empty;
         int counter = 0;
-        string[] line = new string[1000];
+        static int j;
+        string[,] line;
 
-        private void button1_Click(object sender, EventArgs e)
+        public void button1_Click(object sender, EventArgs e)
         {
             var fileContent = string.Empty;
             OpenFileDialog ofd = new OpenFileDialog();
@@ -42,74 +43,101 @@ namespace Edytor_Tekstowy
                     fileContent = reader.ReadToEnd();
                 }
             }
-            var name = filePath.Split('.');
-            if (name[1] == "txt")
-            {
-                using (StreamReader file = new StreamReader(ofd.FileName))
-                {
-                    coWPliku.Text = "";
-                    string ln;
-
-                    while ((ln = file.ReadLine()) != null && counter < 1000)
-                    {
-                        line[counter] = ln;
-                        coWPliku.Text += line[counter] + "\n";
-                        counter++;
-                    }
-                    file.Close();
-                    label1.Text += counter;
-                }
-            }
-            else MessageBox.Show("Możesz dodać tylko plik txt");
-        }
-
-        private void saveButton_Click(object sender, EventArgs e)
-        {
-            using (StreamWriter writer = File.CreateText(filePath))
-            {
-                writer.WriteLine(coWPliku.Text);
-            }
-
-        }
-
-        private void radioButton2_CheckedChanged(object sender, EventArgs e)
-        {
-            if (label3.Visible == false)
-            {
-                label3.Visible = true;
-                textBox2.Visible = true;
-            }
-            else
-            {
-                textBox2.Visible = false;
-                label3.Visible = false;
-            }
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            if (radioButton2.Checked == false && radioButton1.Checked == true)
-            {
-                znaleziono.Text = "Wyrażenia w linijce/kach: ";
-                for (int i = 0; i < counter; i++)
-                {
-                    if (line[i].IndexOf(textBox1.Text, 0, line[i].Length) != -1)
-                    {
-                        int j = i + 1;
-                        znaleziono.Text += " " + j;
-                    }
-                }
-            }
-            else
+            using (StreamReader file = new StreamReader(ofd.FileName))
             {
                 coWPliku.Text = "";
-                for (int i = 0; i < counter; i++)
+                string ln;
+                counter = 0;
+                while ((file.ReadLine()) != null)
                 {
-                    var replacement = line[i].Replace(textBox1.Text, textBox2.Text);
-                    line[i] = replacement;
-                    coWPliku.Text += (replacement) + "\n";
+                    counter++;
                 }
+                j = counter / 1000 + 1;
+                Console.WriteLine(counter / 1000 + 1);
+                Console.WriteLine(counter);
+                Console.WriteLine(j);
+                line = new string[1000, j];
+                j = 0;
+                counter = 0;
+                
+                while ((ln = file.ReadLine()) != null)
+                {
+                    line[counter, j] = ln;
+                    if (j == 0)
+                    {
+                        coWPliku.Text += ln + "\n";
+                    }
+                    counter++;
+                    if (counter == 1000)
+                    {
+                        counter = 0;
+                        j++;
+                        comboBox1.Items.Add("Strona numer: " + (j + 1));
+                        Console.WriteLine(j);
+                    }
+                    Console.WriteLine(counter);               
+                }
+                file.Close();
             }
         }
+
+        
+        
+        
+    
+            private void saveButton_Click(object sender, EventArgs e)
+            {
+                using (StreamWriter writer = File.CreateText(filePath))
+                {
+                    writer.WriteLine(coWPliku.Text);
+                }
+
+            }
+
+            private void radioButton2_CheckedChanged(object sender, EventArgs e)
+            {
+                if (label3.Visible == false)
+                {
+                    label3.Visible = true;
+                    textBox2.Visible = true;
+                }
+                else
+                {
+                    textBox2.Visible = false;
+                    label3.Visible = false;
+                }
+            }
+
+            private void button2_Click(object sender, EventArgs e)
+            {
+                if (radioButton2.Checked == false && radioButton1.Checked == true)
+                {
+                    znaleziono.Text = "Wyrażenia w linijce/kach: ";
+                    for (int k = 0; k < j; k++)
+                    {
+                        for (int i = 0; i < counter; i++)
+                        {
+                            if (line[i, k].IndexOf(textBox1.Text, 0, line[i, j].Length) != -1)
+                            {
+                                int x = i + 1;
+                                znaleziono.Text += " " + x + " podstrona " + k;
+                            }
+                        }
+                    }
+                }
+                else
+                {
+                    coWPliku.Text = "";
+                    for (int k = 0; k < j;)
+                    {
+                        for (int i = 0; i < counter; i++)
+                        {
+                            var replacement = line[i, k].Replace(textBox1.Text, textBox2.Text);
+                            line[i, k] = replacement;
+                            coWPliku.Text += (replacement) + "\n";
+                        }
+                    }
+                }
+            }
     }
 }
