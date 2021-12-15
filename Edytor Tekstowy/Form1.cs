@@ -21,8 +21,9 @@ namespace Edytor_Tekstowy
         string filePath = string.Empty;
         int counter = 0;
         static int j;
+        int p = 0;
         string[,] line;
-
+        
         public void button1_Click(object sender, EventArgs e)
         {
             var fileContent = string.Empty;
@@ -46,51 +47,56 @@ namespace Edytor_Tekstowy
             using (StreamReader file = new StreamReader(ofd.FileName))
             {
                 coWPliku.Text = "";
-                string ln;
                 counter = 0;
                 while ((file.ReadLine()) != null)
                 {
                     counter++;
                 }
                 j = counter / 1000 + 1;
-                Console.WriteLine(counter / 1000 + 1);
-                Console.WriteLine(counter);
-                Console.WriteLine(j);
                 line = new string[1000, j];
-                j = 0;
                 counter = 0;
-                
-                while ((ln = file.ReadLine()) != null)
+                progressBar1.Maximum = (int)j-1;
+                progressBar1.Minimum = 0;
+                progressBar1.Step = 1;
+                foreach (string ln in System.IO.File.ReadLines(filePath))
                 {
-                    line[counter, j] = ln;
-                    if (j == 0)
-                    {
+                    if(p == 0)
                         coWPliku.Text += ln + "\n";
-                    }
+                    line[counter, p] = ln;
                     counter++;
-                    if (counter == 1000)
+                    
+                    if (counter == 999)
                     {
                         counter = 0;
-                        j++;
-                        comboBox1.Items.Add("Strona numer: " + (j + 1));
-                        Console.WriteLine(j);
+                        p++;
+                        comboBox1.Items.Add("Strona numer: " + (p + 1));
+                        progressBar1.PerformStep();
                     }
-                    Console.WriteLine(counter);               
                 }
+                progressBar1.Value=0;
                 file.Close();
+                
             }
         }
 
         
-        
-        
-    
             private void saveButton_Click(object sender, EventArgs e)
             {
-                using (StreamWriter writer = File.CreateText(filePath))
+            using (StreamWriter writer = File.CreateText(filePath))
+            {
+                progressBar1.Maximum = (int)j - 1;
+                progressBar1.Minimum = 0;
+                progressBar1.Step = 1;
+                for (int w = 0; w < j; w++)
                 {
-                    writer.WriteLine(coWPliku.Text);
+                    progressBar1.PerformStep();
+                    for (int i = 0; i < 1000; i++)
+                    {
+                        writer.WriteLine(line[i, w]);
+                    }
                 }
+                progressBar1.Value = 0;
+            }
 
             }
 
@@ -110,34 +116,58 @@ namespace Edytor_Tekstowy
 
             private void button2_Click(object sender, EventArgs e)
             {
-                if (radioButton2.Checked == false && radioButton1.Checked == true)
+            progressBar1.Maximum = (int)j - 1;
+            progressBar1.Minimum = 0;
+            progressBar1.Step = 1;
+            if (radioButton2.Checked == false && radioButton1.Checked == true)
                 {
                     znaleziono.Text = "Wyrażenia w linijce/kach: ";
                     for (int k = 0; k < j; k++)
                     {
-                        for (int i = 0; i < counter; i++)
+                    progressBar1.PerformStep();
+                    znaleziono.Text += "\n";
+                        for (int i = 0; i < 1000; i++)
                         {
-                            if (line[i, k].IndexOf(textBox1.Text, 0, line[i, j].Length) != -1)
+                            if (line[i, k].IndexOf(textBox1.Text, 0, line[i, k].Length) != -1)
                             {
                                 int x = i + 1;
-                                znaleziono.Text += " " + x + " podstrona " + k;
+                                znaleziono.Text += " linijka: " + x + " podstrona " + (k+1)+",";
+
                             }
                         }
                     }
-                }
+                progressBar1.Value = 0;
+            }
                 else
                 {
                     coWPliku.Text = "";
                     for (int k = 0; k < j;)
                     {
-                        for (int i = 0; i < counter; i++)
+                    progressBar1.PerformStep();
+                    for (int i = 0; i < counter; i++)
                         {
                             var replacement = line[i, k].Replace(textBox1.Text, textBox2.Text);
                             line[i, k] = replacement;
                             coWPliku.Text += (replacement) + "\n";
                         }
                     }
-                }
+                progressBar1.Value = 0;
             }
+            }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        { 
+            coWPliku.Text = "";
+            int s = comboBox1.SelectedIndex;
+            progressBar1.Maximum = 999;
+            progressBar1.Minimum = 0;
+            progressBar1.Step = 1;
+            for (int i = 0; i < 1000; i++)
+            {
+                coWPliku.Text += line[i, s]+"\n";
+                progressBar1.PerformStep();
+            }
+            progressBar1.Value = 0;
+        }
     }
 }
