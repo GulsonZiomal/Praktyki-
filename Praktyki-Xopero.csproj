@@ -1,0 +1,1582 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{6093C378-B505-4D0C-AA4D-47FD1DBE38D3}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>Praktyki_Xopero</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+    <Content Include=".git\ms-persist.xml" />
+    <Content Include=".vs\Aplikacja2\Aplikacja2.csproj.user" />
+    <Content Include=".vs\Aplikacja2\Aplikacja2.sln" />
+    <Content Include=".vs\Aplikacja2\bin\Debug\net6.0-windows\Aplikacja2.dll" />
+    <Content Include=".vs\Aplikacja2\bin\Debug\net6.0-windows\Aplikacja2.exe" />
+    <Content Include=".vs\Aplikacja2\bin\Debug\net6.0-windows\Aplikacja2.pdb" />
+    <Content Include=".vs\Aplikacja2\bin\Debug\net6.0-windows\ref\Aplikacja2.dll" />
+    <Content Include=".vs\Aplikacja2\obj\Debug\net6.0-windows\Aplikacja2.csproj.FileListAbsolute.txt" />
+    <Content Include=".vs\Aplikacja2\obj\Debug\net6.0-windows\Aplikacja2.dll" />
+    <Content Include=".vs\Aplikacja2\obj\Debug\net6.0-windows\Aplikacja2.pdb" />
+    <Content Include=".vs\Aplikacja2\obj\Debug\net6.0-windows\apphost.exe" />
+    <Content Include=".vs\Aplikacja2\obj\Debug\net6.0-windows\ref\Aplikacja2.dll" />
+    <Content Include=".vs\Aplikacja3\Aplikacja3.sln" />
+    <Content Include="Aplikacja3 — kopia\Aplikacja3.sln" />
+    <Content Include="Aplikacja3\Aplikacja3.csproj.user" />
+    <Content Include="Aplikacja3\Aplikacja3.sln" />
+    <Content Include="BarNieChlujnyJanek\BarNieChlujnyJanek.sln" />
+    <Content Include="BarNieChlujnyJanek\bin\Debug\BarNieChlujnyJanek.exe" />
+    <Content Include="BarNieChlujnyJanek\bin\Debug\BarNieChlujnyJanek.pdb" />
+    <Content Include="BarNieChlujnyJanek\obj\Debug\BarNieChlujnyJanek.csproj.FileListAbsolute.txt" />
+    <Content Include="BarNieChlujnyJanek\obj\Debug\BarNieChlujnyJanek.exe" />
+    <Content Include="BarNieChlujnyJanek\obj\Debug\BarNieChlujnyJanek.pdb" />
+    <Content Include="ConsoleApp1\bin\Debug\net6.0\ConsoleApp1.dll" />
+    <Content Include="ConsoleApp1\bin\Debug\net6.0\ConsoleApp1.exe" />
+    <Content Include="ConsoleApp1\bin\Debug\net6.0\ConsoleApp1.pdb" />
+    <Content Include="ConsoleApp1\bin\Debug\net6.0\ref\ConsoleApp1.dll" />
+    <Content Include="ConsoleApp1\ConsoleApp1.sln" />
+    <Content Include="ConsoleApp1\obj\Debug\net6.0\apphost.exe" />
+    <Content Include="ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.csproj.FileListAbsolute.txt" />
+    <Content Include="ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.dll" />
+    <Content Include="ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.pdb" />
+    <Content Include="ConsoleApp1\obj\Debug\net6.0\ref\ConsoleApp1.dll" />
+    <Content Include="Edytor Tekstowy\bin\Debug\Edytor Tekstowy.exe" />
+    <Content Include="Edytor Tekstowy\bin\Debug\Edytor Tekstowy.pdb" />
+    <Content Include="Edytor Tekstowy\Edytor Tekstowy.sln" />
+    <Content Include="Edytor Tekstowy\obj\Debug\Edytor Tekstowy.csproj.FileListAbsolute.txt" />
+    <Content Include="Edytor Tekstowy\obj\Debug\Edytor Tekstowy.exe" />
+    <Content Include="Edytor Tekstowy\obj\Debug\Edytor Tekstowy.pdb" />
+    <Content Include="Karty\bin\Debug\Karty.exe" />
+    <Content Include="Karty\bin\Debug\Karty.pdb" />
+    <Content Include="Karty\Karty.sln" />
+    <Content Include="Karty\obj\Debug\Karty.csproj.FileListAbsolute.txt" />
+    <Content Include="Karty\obj\Debug\Karty.exe" />
+    <Content Include="Karty\obj\Debug\Karty.pdb" />
+    <Content Include="KosmiciAtakuja\KosmiciAtakuja.sln" />
+    <Content Include="KosmiciAtakuja\KosmiciAtakuja\bin\Debug\net6.0-windows\KosmiciAtakuja.dll" />
+    <Content Include="KosmiciAtakuja\KosmiciAtakuja\bin\Debug\net6.0-windows\KosmiciAtakuja.exe" />
+    <Content Include="KosmiciAtakuja\KosmiciAtakuja\bin\Debug\net6.0-windows\KosmiciAtakuja.pdb" />
+    <Content Include="KosmiciAtakuja\KosmiciAtakuja\bin\Debug\net6.0-windows\ref\KosmiciAtakuja.dll" />
+    <Content Include="KosmiciAtakuja\KosmiciAtakuja\KosmiciAtakuja.csproj.user" />
+    <Content Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\apphost.exe" />
+    <Content Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja.csproj.FileListAbsolute.txt" />
+    <Content Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja.dll" />
+    <Content Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja.pdb" />
+    <Content Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\ref\KosmiciAtakuja.dll" />
+    <Content Include="ListaKaczek\bin\Debug\net6.0\ListaKaczek.dll" />
+    <Content Include="ListaKaczek\bin\Debug\net6.0\ListaKaczek.exe" />
+    <Content Include="ListaKaczek\bin\Debug\net6.0\ListaKaczek.pdb" />
+    <Content Include="ListaKaczek\bin\Debug\net6.0\ref\ListaKaczek.dll" />
+    <Content Include="ListaKaczek\ListaKaczek.sln" />
+    <Content Include="ListaKaczek\obj\Debug\net6.0\apphost.exe" />
+    <Content Include="ListaKaczek\obj\Debug\net6.0\ListaKaczek.csproj.FileListAbsolute.txt" />
+    <Content Include="ListaKaczek\obj\Debug\net6.0\ListaKaczek.dll" />
+    <Content Include="ListaKaczek\obj\Debug\net6.0\ListaKaczek.pdb" />
+    <Content Include="ListaKaczek\obj\Debug\net6.0\ref\ListaKaczek.dll" />
+    <Content Include="Literki\bin\Debug\Literki.exe" />
+    <Content Include="Literki\bin\Debug\Literki.pdb" />
+    <Content Include="Literki\Literki.sln" />
+    <Content Include="Literki\obj\Debug\Literki.csproj.FileListAbsolute.txt" />
+    <Content Include="Literki\obj\Debug\Literki.exe" />
+    <Content Include="Literki\obj\Debug\Literki.pdb" />
+    <Content Include="ModelDomu\bin\Debug\ModelDomu.exe" />
+    <Content Include="ModelDomu\bin\Debug\ModelDomu.pdb" />
+    <Content Include="ModelDomu\ModelDomu.sln" />
+    <Content Include="ModelDomu\obj\Debug\ModelDomu.csproj.FileListAbsolute.txt" />
+    <Content Include="ModelDomu\obj\Debug\ModelDomu.exe" />
+    <Content Include="ModelDomu\obj\Debug\ModelDomu.pdb" />
+    <Content Include="PrzyjęciaKrystyny\bin\Debug\PrzyjęciaKrystyny.exe" />
+    <Content Include="PrzyjęciaKrystyny\bin\Debug\PrzyjęciaKrystyny.pdb" />
+    <Content Include="PrzyjęciaKrystyny\obj\Debug\PrzyjęciaKrystyny.csproj.FileListAbsolute.txt" />
+    <Content Include="PrzyjęciaKrystyny\obj\Debug\PrzyjęciaKrystyny.exe" />
+    <Content Include="PrzyjęciaKrystyny\obj\Debug\PrzyjęciaKrystyny.pdb" />
+    <Content Include="PrzyjęciaKrystyny\PrzyjęciaKrystyny.sln" />
+    <Content Include="Ul\bin\Debug\Ul.exe" />
+    <Content Include="Ul\bin\Debug\Ul.pdb" />
+    <Content Include="Ul\obj\Debug\Ul.csproj.FileListAbsolute.txt" />
+    <Content Include="Ul\obj\Debug\Ul.exe" />
+    <Content Include="Ul\obj\Debug\Ul.pdb" />
+    <Content Include="Ul\Ul.sln" />
+    <Content Include="WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe" />
+    <Content Include="WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb" />
+    <Content Include="WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.FileListAbsolute.txt" />
+    <Content Include="WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe" />
+    <Content Include="WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb" />
+    <Content Include="WindowsFormsApp1\WindowsFormsApp1.sln" />
+    <Content Include="WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe" />
+    <Content Include="WindowsFormsApp2\bin\Debug\WindowsFormsApp2.pdb" />
+    <Content Include="WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.FileListAbsolute.txt" />
+    <Content Include="WindowsFormsApp2\obj\Debug\WindowsFormsApp2.exe" />
+    <Content Include="WindowsFormsApp2\obj\Debug\WindowsFormsApp2.pdb" />
+    <Content Include="WindowsFormsApp2\WindowsFormsApp2.sln" />
+    <Content Include="WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe" />
+    <Content Include="WindowsFormsApp3\bin\Debug\WindowsFormsApp3.pdb" />
+    <Content Include="WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.FileListAbsolute.txt" />
+    <Content Include="WindowsFormsApp3\obj\Debug\WindowsFormsApp3.exe" />
+    <Content Include="WindowsFormsApp3\obj\Debug\WindowsFormsApp3.pdb" />
+    <Content Include="WindowsFormsApp3\WindowsFormsApp3.sln" />
+    <Content Include="WindowsFormsApp4\WindowsFormsApp4 %282%29.sln" />
+    <Content Include="WindowsFormsApp4\WindowsFormsApp4.sln" />
+    <Content Include="Wyprawa\bin\Debug\Wyprawa.exe" />
+    <Content Include="Wyprawa\bin\Debug\Wyprawa.pdb" />
+    <Content Include="Wyprawa\Danewyjściowe-Debugowanie.txt" />
+    <Content Include="Wyprawa\obj\Debug\Wyprawa.csproj.FileListAbsolute.txt" />
+    <Content Include="Wyprawa\obj\Debug\Wyprawa.exe" />
+    <Content Include="Wyprawa\obj\Debug\Wyprawa.pdb" />
+    <Content Include="Wyprawa\Wyprawa.sln" />
+    <Content Include="Wyścigi Konne\bin\Debug\Wyścigi Konne.exe" />
+    <Content Include="Wyścigi Konne\bin\Debug\Wyścigi Konne.pdb" />
+    <Content Include="Wyścigi Konne\obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
+    <Content Include="Wyścigi Konne\obj\Debug\Wyścigi Konne.csproj.FileListAbsolute.txt" />
+    <Content Include="Wyścigi Konne\obj\Debug\Wyścigi Konne.exe" />
+    <Content Include="Wyścigi Konne\obj\Debug\Wyścigi Konne.pdb" />
+    <Content Include="Wyścigi Konne\Resources\dog.png" />
+    <Content Include="Wyścigi Konne\Wyścigi Konne.sln" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".git\COMMIT_EDITMSG" />
+    <None Include=".git\config" />
+    <None Include=".git\description" />
+    <None Include=".git\FETCH_HEAD" />
+    <None Include=".git\HEAD" />
+    <None Include=".git\hooks\applypatch-msg.sample" />
+    <None Include=".git\hooks\commit-msg.sample" />
+    <None Include=".git\hooks\fsmonitor-watchman.sample" />
+    <None Include=".git\hooks\post-update.sample" />
+    <None Include=".git\hooks\pre-applypatch.sample" />
+    <None Include=".git\hooks\pre-commit.sample" />
+    <None Include=".git\hooks\pre-merge-commit.sample" />
+    <None Include=".git\hooks\pre-push.sample" />
+    <None Include=".git\hooks\pre-rebase.sample" />
+    <None Include=".git\hooks\pre-receive.sample" />
+    <None Include=".git\hooks\prepare-commit-msg.sample" />
+    <None Include=".git\hooks\push-to-checkout.sample" />
+    <None Include=".git\hooks\update.sample" />
+    <None Include=".git\index" />
+    <None Include=".git\info\exclude" />
+    <None Include=".git\logs\HEAD" />
+    <None Include=".git\logs\refs\heads\dev" />
+    <None Include=".git\logs\refs\heads\main" />
+    <None Include=".git\logs\refs\remotes\origin\dev" />
+    <None Include=".git\logs\refs\remotes\origin\main" />
+    <None Include=".git\logs\refs\stash" />
+    <None Include=".git\objects\00\34a9e454539d1ec8abd24aad2f6a8d38e11f1a" />
+    <None Include=".git\objects\00\3ead9b2640ccb8b1e4df45af7185632f0a164e" />
+    <None Include=".git\objects\00\bd2e98d68b354f0a95c4e6d32085b4e9e8178d" />
+    <None Include=".git\objects\00\c7bfb554148396d4aff774620329e7c49379f6" />
+    <None Include=".git\objects\01\f34e19f2a7a4873a6e3e3dcde0770f4cfdbace" />
+    <None Include=".git\objects\02\98b9f2698da9961144654c5013baa0623bd706" />
+    <None Include=".git\objects\02\aef3c357490a24c712ddcce501c3cc02b15317" />
+    <None Include=".git\objects\02\d13ae811e106450ddaa8886f7f6b50d5d58ab9" />
+    <None Include=".git\objects\02\fa16d873a7ce7db82adc24258171c99349e4d9" />
+    <None Include=".git\objects\03\358bcccedf1f87a78d698d9f959079485b7016" />
+    <None Include=".git\objects\03\a1f83cae825e5bae387a2f7c5db9b0ed1f2a95" />
+    <None Include=".git\objects\03\a3ec0f346a92de320b6ed2a38d1681bb73187f" />
+    <None Include=".git\objects\03\acd27fd2161ac522fab2402a66da52ad07e605" />
+    <None Include=".git\objects\03\fc07ddeefda2dbe4ba46fcd185474dfddec54e" />
+    <None Include=".git\objects\05\65b499122c12df48fd484558f30b8196754e0b" />
+    <None Include=".git\objects\05\e526b462fa5c3190d860445f6b157b306063f4" />
+    <None Include=".git\objects\05\f17d0884709d9e9e6ae677d2aa09d40dc523ed" />
+    <None Include=".git\objects\07\114768e39f33346ced3dcd398805c94a2e88ed" />
+    <None Include=".git\objects\07\232a2163fea58e96735d7064d637d33b6ebc6f" />
+    <None Include=".git\objects\07\4bde504a8318351c386a55ac6b4994804852b7" />
+    <None Include=".git\objects\08\29a745d1390bc7ef30131ce26975324a57322d" />
+    <None Include=".git\objects\08\8ad1460b50f42b391bbe17d06e1f07ffe5f138" />
+    <None Include=".git\objects\09\5b5721e81ee7f75b882502dbed7a353d5699c7" />
+    <None Include=".git\objects\09\b31c3f1a9260bc932f9dae62c55272e374af98" />
+    <None Include=".git\objects\09\c0ea22537377632ae6bcbeac95292a060c2b2d" />
+    <None Include=".git\objects\0a\5fdd0676c9042100bc33c7d4e7478740950657" />
+    <None Include=".git\objects\0a\9a55ab5c1a0938d2107282d5fd45b984939472" />
+    <None Include=".git\objects\0a\a90c7878c2c0ff468c5389cc6d1f9463c65521" />
+    <None Include=".git\objects\0b\72d108a6646398a0d682526f7d9e1806e56011" />
+    <None Include=".git\objects\0b\b5487228d8d55204070edd8cd53a0667147893" />
+    <None Include=".git\objects\0c\4574565b1cfd20a3c5d2cdd482b7feb2ff1a71" />
+    <None Include=".git\objects\0c\b6455671c1fb9aa8c3dea6421ed9210ce7bd09" />
+    <None Include=".git\objects\0c\ccc54c9967e0d0d07129e5fcceb97bfa1e04cd" />
+    <None Include=".git\objects\0c\e413129175c7ee239e29270e60075677f7f9bf" />
+    <None Include=".git\objects\0d\3ff56c38a772d874d74b75a9fd724a49c60bd3" />
+    <None Include=".git\objects\0d\50f04674cb8f1e38e33b97b95001dd381a8432" />
+    <None Include=".git\objects\0d\7ac48d97b1e4f8ad0a383687e63862ab871485" />
+    <None Include=".git\objects\0d\e3eb3bf039b6742413bd1b4c5e3535e3fe4fc2" />
+    <None Include=".git\objects\0e\30cdb1d25ec8beace20e316863645a5cf51d08" />
+    <None Include=".git\objects\0e\4d46eb068784d1da4389757620a0f2f754e612" />
+    <None Include=".git\objects\0e\50cca4822fd88a11e5f50a9968ded707b3b81b" />
+    <None Include=".git\objects\0f\a4d7aebc45461ecab6d287fc5728dbe8a71c56" />
+    <None Include=".git\objects\0f\f50918d3e2ecfe13a321f736f33d2af74c88d0" />
+    <None Include=".git\objects\10\9a10e882a73720cdbd2a89e3e3de8d5bd32e72" />
+    <None Include=".git\objects\11\6f5b7654a9eae0dcbe54eb2eee3b1b6f4f4a01" />
+    <None Include=".git\objects\11\99d12fc2255f551aaf11f59b4ce52311a9b936" />
+    <None Include=".git\objects\11\abeb13ac5ccc3d1e34af3fc40b4507cb467d57" />
+    <None Include=".git\objects\11\e20254f8398a5e7d9a242bdc503dd6c468ed78" />
+    <None Include=".git\objects\12\602ac513975bc6d0710a3f3bf459922fa82257" />
+    <None Include=".git\objects\12\6252ddf861cd1ed8106807bc5afffd39961fe4" />
+    <None Include=".git\objects\12\8c5e29b7a43f7f2599bcbdc38b429e403b3532" />
+    <None Include=".git\objects\12\a22d6035ba845523e5548853c0a58b97056a71" />
+    <None Include=".git\objects\12\d4625baa581824c7366a66dbf8d67c7578f2ca" />
+    <None Include=".git\objects\13\9d45a335e8250172303b211c2f928ba1194dbf" />
+    <None Include=".git\objects\14\831ce0051a25df01608175f50c534d35b80de5" />
+    <None Include=".git\objects\14\ee0c2bb6b7d9321b45edbe2bc080b9901ef6b5" />
+    <None Include=".git\objects\14\fd97de774eafad4ae31f2a1152d7b1d8e2562d" />
+    <None Include=".git\objects\15\43b7d51d7d49078854813ce3f06a2c117b6931" />
+    <None Include=".git\objects\16\80f3ea5dbfc7c23ee0ff74454b178c328bbbfb" />
+    <None Include=".git\objects\16\92fc79ce7ee0097dbcbebac3fb7657a51b040b" />
+    <None Include=".git\objects\17\3a16ca107cb040bd4513b0584063df40bcf628" />
+    <None Include=".git\objects\17\54320040bf0b18ec4745a89428d620f39b74d8" />
+    <None Include=".git\objects\17\84340a5b12b2614af15d0b63f4fe7d55962941" />
+    <None Include=".git\objects\18\697d30912f1741faf821fceb15155aabf1f1ff" />
+    <None Include=".git\objects\18\897bdbb2fb2e620a98f7839d886bee4f9dcf7c" />
+    <None Include=".git\objects\18\f3348146f1476bb56e6bb98c784ceb8735e8c5" />
+    <None Include=".git\objects\19\1367391549b6b60a12dcc6e6496343c87ead21" />
+    <None Include=".git\objects\19\7280f0ca5aa053f9d8afafcee660ebfdeeaaa3" />
+    <None Include=".git\objects\1a\2cf897a259a398ad30c893a3e294a3f65625a0" />
+    <None Include=".git\objects\1a\33bf28611250319976fd4248f3d49f034cb290" />
+    <None Include=".git\objects\1a\7ca541e9ceac66e1ffaee7cf965fd26131076b" />
+    <None Include=".git\objects\1a\e86661aee5bac50399d6c1376ef8d2508908b7" />
+    <None Include=".git\objects\1a\f7de150c99c12dd67a509fe57c10d63e4eeb04" />
+    <None Include=".git\objects\1b\0c32bf9e263172b35a3b89eda042475e8ddbea" />
+    <None Include=".git\objects\1b\125156d601c2999a8894d26c98162465e6fc77" />
+    <None Include=".git\objects\1b\3f4193ef2c8ce3d113a5289914620380b7eb07" />
+    <None Include=".git\objects\1b\986f2facd3cac093ff7cb3bdd2c1a1db02bed5" />
+    <None Include=".git\objects\1b\dccba07c35aca24174cd00bd285091affe1eec" />
+    <None Include=".git\objects\1c\1896f8ffa4a691517e8af8845d354d446f677e" />
+    <None Include=".git\objects\1c\1d1bed6552a403ae068adb5eed4ac444661872" />
+    <None Include=".git\objects\1c\3ce27afde03a2e7943eb4c9203ea4f4c9a755c" />
+    <None Include=".git\objects\1c\76093edf00adc603707bb6b8863c9abb9fe4bd" />
+    <None Include=".git\objects\1c\9f4bb8bc3be210e577c50da1a2e845e32e2818" />
+    <None Include=".git\objects\1d\cb68e4fe3b8973b8c08b83352ed7bb6c519a2d" />
+    <None Include=".git\objects\1e\1da2df2896983101c2007939dabe99093c0ea8" />
+    <None Include=".git\objects\1e\2a8dd651e3276181eb25402a0f7ffd29618392" />
+    <None Include=".git\objects\1f\29a343ee0bcfba76fd328f61212f8c76d929fd" />
+    <None Include=".git\objects\1f\d6ca751c4cff1efa0a0b24b40b229957fd59c6" />
+    <None Include=".git\objects\1f\d962a12c0974ca460b85a44d7bb5a2dac8a3c8" />
+    <None Include=".git\objects\20\4fdef644eaa2e6de09b015f5f4588ab58aa14d" />
+    <None Include=".git\objects\21\29fa98f12d3f8975060c5686c6d0da323e03d6" />
+    <None Include=".git\objects\21\5ba13ebb239f1172da8a52019bbfc05296261b" />
+    <None Include=".git\objects\21\95281df4873199e5143acfb8ca0442b25ff77d" />
+    <None Include=".git\objects\21\e5260b71ea8968c5b804495fde3c7b93809789" />
+    <None Include=".git\objects\22\0fe7e27f551b04fbba5cb92645145255cf42a8" />
+    <None Include=".git\objects\22\22f8651bd843a23c44386db9181cd119525812" />
+    <None Include=".git\objects\22\e224f06a7a37a7474da78343cdb7b001c1107c" />
+    <None Include=".git\objects\24\4c837d6defe1baf44a00acfa38e93c8da7d433" />
+    <None Include=".git\objects\24\96adf00815dab9f1adafd1399e9d293965a4c0" />
+    <None Include=".git\objects\25\47d23844c4bebf369790bed1f776b87b5f66e8" />
+    <None Include=".git\objects\25\df78cc438f4c47f1499c8608d97ece5100058e" />
+    <None Include=".git\objects\26\179636352e217336b4cd43f21b672e0eb53ece" />
+    <None Include=".git\objects\26\4e9c3bb68984c5df2c26b54b34e71e5d2b2035" />
+    <None Include=".git\objects\26\c0d3b84d38ae740598742b471b1398a0700760" />
+    <None Include=".git\objects\27\086d18849b3235345ad25780be71d854185c82" />
+    <None Include=".git\objects\27\9f6d9b202c1dd4e703578af1029a331fbb02b1" />
+    <None Include=".git\objects\28\2185916339a58a3d644e1e619ce6328882d2c8" />
+    <None Include=".git\objects\28\94080cb3bd4e5ecfef4d8e91eebdf34599e925" />
+    <None Include=".git\objects\28\d55887522ff5629ffa366c7c1d465981b34afd" />
+    <None Include=".git\objects\29\64c79af4a5f29589e9e52bd985b9758cce1187" />
+    <None Include=".git\objects\29\7a497f13252c81a8fe541e8be5e6f47954928e" />
+    <None Include=".git\objects\29\cde47074a22a6eac355f05a4c2968badfa07bd" />
+    <None Include=".git\objects\2a\7d2c8dfc3b6a1bf26dc54e9f83c703a6020bf9" />
+    <None Include=".git\objects\2a\ee006a5c4e6e1240873c80011744da2da9d4f9" />
+    <None Include=".git\objects\2b\0a99814596ae44bfe7dd942bfc5ddd3589692d" />
+    <None Include=".git\objects\2b\21248f6417eafaab7b0e001eccefc95633ff48" />
+    <None Include=".git\objects\2b\582fc49f1f4fb99044c4fda8d060b4c65b29e0" />
+    <None Include=".git\objects\2b\a6bd96e1eb8f968c8f12e52d7e5e7803bdcb80" />
+    <None Include=".git\objects\2b\ed952a8e1c00d360cc227565dada7b0103c8d1" />
+    <None Include=".git\objects\2b\fb4e92cd21c1396fcc374c2ad386cfaffb5fd0" />
+    <None Include=".git\objects\2c\02c348c8e90d82d8c79ccbb08a1332b0c024fb" />
+    <None Include=".git\objects\2c\3d4af25e26e453d54e3aec1a98d5eabf04980f" />
+    <None Include=".git\objects\2d\dfb04410b19796bd382799da63e96fca1b2c26" />
+    <None Include=".git\objects\2e\71bf30c7176ef1b9332988482b962f5efaca50" />
+    <None Include=".git\objects\2f\069d7533fc8c2aed2cff96beadd129f74aba0f" />
+    <None Include=".git\objects\2f\3935f3f1944a832d2b00a74d2d8dc6f381fa1e" />
+    <None Include=".git\objects\2f\59b702bae1656f5dc93bfdb94e8662249a1fc3" />
+    <None Include=".git\objects\2f\9f3b2e13edda0d5654fb173402c535150e0e93" />
+    <None Include=".git\objects\30\b6b4114fc9a3e709b0e5ca6e907776efe402ad" />
+    <None Include=".git\objects\31\427466445d6b31785d9c6f268badfa13b2d06f" />
+    <None Include=".git\objects\32\87ab4d36063834ea2e546bfa39642d5a735573" />
+    <None Include=".git\objects\32\965f92e7941add01d2aee5888f44654764c7ca" />
+    <None Include=".git\objects\32\c7cdf5b144ce5125d854dbb31719672cd4c988" />
+    <None Include=".git\objects\33\069979e5b3cf18fc9cd913afb843cf67edda40" />
+    <None Include=".git\objects\33\822195d13f46ef39ce28f02edb4de7bd33e192" />
+    <None Include=".git\objects\34\4752ed5f00caad96b2edacc3464ff716473b75" />
+    <None Include=".git\objects\34\a0d47e40aa87703abde739e980326979bc36eb" />
+    <None Include=".git\objects\35\5ed62b7fbc23571060b533b624bff967876273" />
+    <None Include=".git\objects\36\203c728faac8d3779420bb7896ee93b49c7106" />
+    <None Include=".git\objects\36\30e81c5581c77af8288dd607df177a667d4a88" />
+    <None Include=".git\objects\37\76e687e9a35c4e7908c16745d6350911fc635f" />
+    <None Include=".git\objects\37\ab5fda711d518dfd458e99edb09a6b9af02769" />
+    <None Include=".git\objects\38\191171906776112a0457681b7d59d007a022da" />
+    <None Include=".git\objects\38\4590534dd7c78563cfea215fd48cf9dc0b65d9" />
+    <None Include=".git\objects\38\71b184d3f475a3c71d56db9f48c2a193080512" />
+    <None Include=".git\objects\38\bc0649609626a93f2b564f14f547c1d3caf78c" />
+    <None Include=".git\objects\39\2b6f04c767d91861673c1527c12998c98bca25" />
+    <None Include=".git\objects\39\645652af62950ebf3b28ec3a5400dcec30b1c4" />
+    <None Include=".git\objects\39\b60e7401d002a3d92a7a050c2254e4d916044d" />
+    <None Include=".git\objects\39\ba774365f5d22c2f2a57e728fc9166b7b69584" />
+    <None Include=".git\objects\3a\1211d8b911406b193fd5cb9cfcf548fa9eacdb" />
+    <None Include=".git\objects\3a\a26f0dd7bc3ac282d9bccf7697ceb744ab284a" />
+    <None Include=".git\objects\3a\dca00e5f9abb2d9d176ee79bb601ced7a70d3b" />
+    <None Include=".git\objects\3a\ed0f9cc3cba517b797fb892b0361142afbbff9" />
+    <None Include=".git\objects\3b\2d20c44fab7404dbef1806da6858a2fcdc25e9" />
+    <None Include=".git\objects\3b\3266703f9cbfc11fd285aab2a49116b089f89d" />
+    <None Include=".git\objects\3b\45c4de2e72830e61063357ac0cbb2883c51db5" />
+    <None Include=".git\objects\3b\89a21f1ee6ef36b34af95985d946a20f028b1b" />
+    <None Include=".git\objects\3b\c98548ff1d55b29b5ffb09654948377b13ce38" />
+    <None Include=".git\objects\3c\0f4fbc41abc2b797c9adb5a722924802dd8f8c" />
+    <None Include=".git\objects\3c\100e13b77803e8bef3984bf4b8e8334b968596" />
+    <None Include=".git\objects\3c\72d5615712b839d5c76ca22fc2d38141ed820e" />
+    <None Include=".git\objects\3c\8709d7de902efa524b13229da28d50bf6c9bb9" />
+    <None Include=".git\objects\3c\9a1bfe97baf88192b6a37aa4959252225f2511" />
+    <None Include=".git\objects\3d\9a297ad763f1529d2bbdc0837a5c7774fc4054" />
+    <None Include=".git\objects\3d\c06ef3cc4057524bf5d2cd49936dff789cebe8" />
+    <None Include=".git\objects\3e\7d3576ae435ff4d7eea8f2e8c10b8853b51d85" />
+    <None Include=".git\objects\3e\9082ffdf71f1efc8159cf13bf15a8305cd5bee" />
+    <None Include=".git\objects\3e\b42f2fab8f39af91f7f2b830199f85769f131c" />
+    <None Include=".git\objects\3e\e895d3be2680d7c0788e4006006a5cc6d243dd" />
+    <None Include=".git\objects\3f\4a8b2f4897132d7593df4e33eeb4b354c9f8a0" />
+    <None Include=".git\objects\3f\8cc8d6d5031981d79cfa9ff5a77161ce669337" />
+    <None Include=".git\objects\40\4a8a465936dab5fb151ed98a19b6469c02a1d3" />
+    <None Include=".git\objects\40\7afb3c97ceaf4a142e450612f3f64f90701749" />
+    <None Include=".git\objects\40\9f17e86a60d6fb5bb4d3cbade4072712b84764" />
+    <None Include=".git\objects\40\d78194a3e14402b82724cbd62401d4636cf8de" />
+    <None Include=".git\objects\40\deb1f778a352737f0bd1b592a7ffa30e51f05e" />
+    <None Include=".git\objects\40\e1e20f86fca0b66017bff3dbaa3a7ce66ae2b3" />
+    <None Include=".git\objects\41\06cb0f2dd314ba4416cd55c4b25e4e07d93edc" />
+    <None Include=".git\objects\41\28d9510da4f2191244ddd4335affd31c97a66d" />
+    <None Include=".git\objects\41\71b901ac22616db85d05317902880196b3a99a" />
+    <None Include=".git\objects\41\846cf2b00ecdcbef25684d42d8edd6aec39bad" />
+    <None Include=".git\objects\41\a4351d53736f0e72733af76d5e981dd25f3f7b" />
+    <None Include=".git\objects\41\ac75336e3ef7b95dae888c3368172c6caa20cb" />
+    <None Include=".git\objects\41\c48aa3888eddfa987aa27d70eeae760fa998b9" />
+    <None Include=".git\objects\41\cbcdc96a72b7d74d8ef204dafacfc42def2e76" />
+    <None Include=".git\objects\42\409ad7d95c2c25908a9255d0d65671521ba338" />
+    <None Include=".git\objects\42\e11623915bef6b94cf007261a8dd4da0e697a0" />
+    <None Include=".git\objects\43\1070989bab8fd7d5f750e8d6476486afb3b1dd" />
+    <None Include=".git\objects\43\8df21381ac484a2b9663978736c524d8e8f3bf" />
+    <None Include=".git\objects\43\d6cdd8254415fe527030259f0e97f8a93f0691" />
+    <None Include=".git\objects\44\289d214efa8d5dc78e510adbb62700a9d40dee" />
+    <None Include=".git\objects\44\586d7b77a4080d96c66ab747b1ad9d26df30fb" />
+    <None Include=".git\objects\44\acb699c9618f3f7aaf2c06cc782ddcbf320500" />
+    <None Include=".git\objects\44\c9be1990ee743fb9118b4246405b9737352876" />
+    <None Include=".git\objects\44\e35b72415ff595fe739c8f5e2d5c901f7e338a" />
+    <None Include=".git\objects\44\fecf5e0c4abe0be47ea763aa6e7dbf058c2092" />
+    <None Include=".git\objects\45\72e7a1db77854956c08ca73d44e04578f9ffee" />
+    <None Include=".git\objects\45\8de0862209cd56722911c6a2e1fdd585ee4a4e" />
+    <None Include=".git\objects\46\95eba119bac03ab3fb2f0ddb62f332afbab303" />
+    <None Include=".git\objects\46\df066951a9ed8717ff4c59da44f68ca092d984" />
+    <None Include=".git\objects\47\377d1793a245b33bbbfc9f650033afeabbcaec" />
+    <None Include=".git\objects\48\1a9b68db06b47e8a72a9739db72eb938982e0f" />
+    <None Include=".git\objects\48\33f0effd2f7bf8c0980f3fa099a433978ec9fd" />
+    <None Include=".git\objects\4a\06df34993081acd90ce9be1c1f526549e31090" />
+    <None Include=".git\objects\4a\5524a19aa2f0ff4768bfc5842d7844e0dd9911" />
+    <None Include=".git\objects\4b\27f00ac0c804365f60eac58527e0ee9da02b52" />
+    <None Include=".git\objects\4b\329c002aac8bb87e5a28851872966c6fd9b3ee" />
+    <None Include=".git\objects\4b\9221e5c8c8dab46341a75494534c85b865e44f" />
+    <None Include=".git\objects\4b\b1bfff3fb264343b3ff048e66bb3eb33048e36" />
+    <None Include=".git\objects\4c\6d4dd11992c5eb46208f34f47ea801e02bc3c7" />
+    <None Include=".git\objects\4c\7e84ac26a658cd2b131d0a08abc5b7eeafa19c" />
+    <None Include=".git\objects\4c\f54703456215b29901d58389401c51fcf57404" />
+    <None Include=".git\objects\4d\57855739f0ce3ba2e31683da5cce3121968f29" />
+    <None Include=".git\objects\4e\265d765e283a6d8eed1934f93cb52d3d632ea8" />
+    <None Include=".git\objects\4e\abd403335a03fba606558059c092f6b29af588" />
+    <None Include=".git\objects\4e\b283231f51f31a423e3c092c883596d8cee2db" />
+    <None Include=".git\objects\4f\0d784619ac715dd4f0127c37f6eb6757a9533c" />
+    <None Include=".git\objects\4f\8fc1781a75496ab841d64aecda4d7c192c4619" />
+    <None Include=".git\objects\4f\9bbd70d1cf7630e75339e9cd2ba9d1d3395b40" />
+    <None Include=".git\objects\50\da85de3ee0449d33eb321f8935331532da234e" />
+    <None Include=".git\objects\50\e59bff763d3287505b6e947949f8b1934b4e0c" />
+    <None Include=".git\objects\51\41f7bf4258298200253f524d189b46a237e7bc" />
+    <None Include=".git\objects\51\437cd7a54d3e699ece62509f1e679c7e9831a3" />
+    <None Include=".git\objects\51\a9d12634596211e0b527c1c5b62e799a1046c8" />
+    <None Include=".git\objects\51\d562b13b669e6c782eed744a773aba938e0da3" />
+    <None Include=".git\objects\51\e989d9cc275974fc3c5928ec8ec3c597b17bb6" />
+    <None Include=".git\objects\52\721716f929c131f43ed6e9772607d6358a82d0" />
+    <None Include=".git\objects\52\a6fd2852e69d733456f81e8824bce4cbc07819" />
+    <None Include=".git\objects\53\e27d755f1e0c7d7a8a52ec12259f115aa232bd" />
+    <None Include=".git\objects\54\74ebcc10f337db35e57be4c8161de2cd649f9e" />
+    <None Include=".git\objects\55\9507fed6ca69716cfe65c56e5279b93fb9b854" />
+    <None Include=".git\objects\55\a31a6965370ad56bcb1cbb5d5e4a296e768ec6" />
+    <None Include=".git\objects\55\b4aabf4b5a042431c88428ca37c0b736189256" />
+    <None Include=".git\objects\55\cd9aefe285b2cf1c86bd68040137d75bdd541a" />
+    <None Include=".git\objects\56\905ed3c98d76f72b40db797889976674a9beef" />
+    <None Include=".git\objects\56\efbc7b5f15b5166cc89dae0406895b57de0b67" />
+    <None Include=".git\objects\57\55aae20ba53123a0f0f1715ee121324876b863" />
+    <None Include=".git\objects\57\d8b005d1e27c8f966fae65952a5381b7ad27b6" />
+    <None Include=".git\objects\58\0f8708b535d9929dccb0cfb16c57125210ac52" />
+    <None Include=".git\objects\58\2f3fb60879d2f18651ec3ff7c3d5e78875a690" />
+    <None Include=".git\objects\59\834e74aa4447a4a97659c9df1c03d1dbc10837" />
+    <None Include=".git\objects\5a\19c838e6b79568671e65bb9296db98b1a41316" />
+    <None Include=".git\objects\5a\1f75cb7687dd488c3eb5c9b25701bd39e4b92b" />
+    <None Include=".git\objects\5a\e0dd9a63638e1936f1d5a69cb95145a93bf4d2" />
+    <None Include=".git\objects\5a\f78a38daf365a081d7c693593cdb95371afb9a" />
+    <None Include=".git\objects\5b\26ed2305257431ecb0797385985ec6726ca763" />
+    <None Include=".git\objects\5b\6eb0350ed2eceab0c0b7383a4779bb89517c0e" />
+    <None Include=".git\objects\5b\7daf2d4b6cb8baf00452182ec2c8b261a4fa55" />
+    <None Include=".git\objects\5c\15fafe987b2996eeb85088e0120c6a6ef379dd" />
+    <None Include=".git\objects\5c\709e349a9b4d8156b173ac3505577b3f9ddf42" />
+    <None Include=".git\objects\5c\a10b9e308192fcfb02d5062e6f4524a33eb932" />
+    <None Include=".git\objects\5d\1f7dae745df42a69eb53c064c7c8f60c4e3785" />
+    <None Include=".git\objects\5d\97ff6a50c13c42392b7e8438435d24b9852127" />
+    <None Include=".git\objects\5e\5fcb0d1ac79516f24cbaf53e532427bd4135db" />
+    <None Include=".git\objects\5e\916013423cd0f669bcc60cae76639483cd28f2" />
+    <None Include=".git\objects\5f\b3b333b90522dba787c830ce0028571d998517" />
+    <None Include=".git\objects\5f\d745de888945acc794a1ec0a7586c949df0710" />
+    <None Include=".git\objects\60\2c3964d8f35ef79293b4f0d8f4b59499b2745a" />
+    <None Include=".git\objects\60\9c8076d2617b20c89f0a4e5857877cfcd93606" />
+    <None Include=".git\objects\60\f107949b26a5292fbac8fc8d8c9aba618ddc3f" />
+    <None Include=".git\objects\61\08b0e1d74feddec08fe46439c2504c6e387447" />
+    <None Include=".git\objects\62\443a77744e7df8c6b1ef1d97d39d19248e25d0" />
+    <None Include=".git\objects\62\805b7cfb3fbc4c131262d712bf09b1df38453b" />
+    <None Include=".git\objects\62\8dd5eea7b727c54579dc52c5ae4a243864b70a" />
+    <None Include=".git\objects\62\9646342fa793f9a8d9544f3b8dc2a5bf0bd2a9" />
+    <None Include=".git\objects\63\0e663854e14478cb6eabb23c1b130b9af3829f" />
+    <None Include=".git\objects\63\2f359aafb9b3d8b086042977681d0b94536ab4" />
+    <None Include=".git\objects\63\980f84c734e51963e351d2fc2f27d7b43d86c1" />
+    <None Include=".git\objects\63\f0a319b53ab411892ced1b60550e963543d665" />
+    <None Include=".git\objects\64\16cc06eb148229cd6c539d66cbbb460cd5d366" />
+    <None Include=".git\objects\64\4b0a6fd0475f9a0a9c31f1ad279b321cde0085" />
+    <None Include=".git\objects\64\6df627d95e11dc007f66ce76cad2b59342b74b" />
+    <None Include=".git\objects\64\c3257df205816a27237ef5f0f7bf16c4968bb0" />
+    <None Include=".git\objects\64\e1f212e51192127043e037e0bb5ee1ec5d92b9" />
+    <None Include=".git\objects\65\e0c17cd80f383fef648abfa0475149927b7a77" />
+    <None Include=".git\objects\66\204092de5947105574a6c3bdb5bf2bae213dd7" />
+    <None Include=".git\objects\66\3d6456a28a284e70ebe8ff394f0be0c746e5a5" />
+    <None Include=".git\objects\66\a3344afb55721b4da76900c7c165835daac38d" />
+    <None Include=".git\objects\67\ce7b7868ba2a263b15f6118840c8391da6d44b" />
+    <None Include=".git\objects\68\c60367b5ef8a968c5cdee2f10f4a6f2835204f" />
+    <None Include=".git\objects\68\f1af5961a9637556550120a9c343436f0c6dd9" />
+    <None Include=".git\objects\69\cb39b3accb51a77c19721a6c5f342b844fa701" />
+    <None Include=".git\objects\6a\00f0878b51dfe99f76313db3c2eca5889b0f6c" />
+    <None Include=".git\objects\6a\0a1dabb184e51442ecbec339ac8822789457b9" />
+    <None Include=".git\objects\6a\0cf85e588d5963b19f14f5ddffbf9fa3babee0" />
+    <None Include=".git\objects\6b\054be47088728b646da1d62a1d4d39a9c6d148" />
+    <None Include=".git\objects\6b\545775cae5eebeff0ec7d4cf971448a49981af" />
+    <None Include=".git\objects\6b\6114114f4e89a1f2d0e911ff090e541af1260c" />
+    <None Include=".git\objects\6b\62d978d8eea39f80e430d209097c772b07aa35" />
+    <None Include=".git\objects\6b\aa7766552fab367cdf1a18dfd54f37be342431" />
+    <None Include=".git\objects\6b\ffdbd26f5a7f91982842b21721875ccf1dd916" />
+    <None Include=".git\objects\6c\05a9776bd7cbae976fdcec7e3a254e93018279" />
+    <None Include=".git\objects\6d\55ae8ab60016f180a3b429dc0e6cef1b6ebacc" />
+    <None Include=".git\objects\6d\db2b9301599cc7f733367e9a10addcd963c43a" />
+    <None Include=".git\objects\6e\57750d96e50d61d5e4c4da312f778242eab327" />
+    <None Include=".git\objects\6e\cc9f39c8508851725d9feb4123fed24ed250e6" />
+    <None Include=".git\objects\6f\3c92601491be55383e54738550084f513c22f9" />
+    <None Include=".git\objects\70\141e58db1e1a83816aedfc79a56d8e0e694969" />
+    <None Include=".git\objects\70\3c99ec524f5810860c0239f58075585eb12cf6" />
+    <None Include=".git\objects\70\6cdfa24ea8dc258aa36871cbcbce0a948e9132" />
+    <None Include=".git\objects\70\d0d179d90c683a37e01ee6403a445a1f53446c" />
+    <None Include=".git\objects\70\f32d5f2193d4683e38ba246af48fee5688645e" />
+    <None Include=".git\objects\72\4d387306f3eda81e3e9ebfcd1277e8cad71aa0" />
+    <None Include=".git\objects\72\9407e1981e272b17b63983a5314272faf2cc8f" />
+    <None Include=".git\objects\73\672d64c94e24f6f5d1b5484738fc165ce7c785" />
+    <None Include=".git\objects\74\85525f9da733330695d197451351eb2fb74b30" />
+    <None Include=".git\objects\74\abf5c9766499f4fd79d4a9398f619d39c2e45e" />
+    <None Include=".git\objects\74\da78c2b2dbc4becbc02225dc52c5ddeb8c607e" />
+    <None Include=".git\objects\74\f1ac5090f97bfe409b171c889346649841289b" />
+    <None Include=".git\objects\76\26b6ce642c200cd1eb6e7c71911e83805a80f1" />
+    <None Include=".git\objects\78\4d678cd553f68f1551e638e542151bcb5d1a7a" />
+    <None Include=".git\objects\78\719dfcd9d34bd35e7803115554dfe83632d89a" />
+    <None Include=".git\objects\78\b2f457e4a0f4025880acc38f5a72f5eeab4064" />
+    <None Include=".git\objects\78\fe63c1c91532a83ab4a15f7e973b1b0bb4f216" />
+    <None Include=".git\objects\79\3aa98193fdd2a972807fc974353c78f55884c2" />
+    <None Include=".git\objects\79\44a40aaafecd2287734edb0f39c615039aee5f" />
+    <None Include=".git\objects\79\a022d27630c4ea0d33c315ac03c4761fadbab4" />
+    <None Include=".git\objects\7a\087aa759411a30aabd2e5149999a2ec8e83cca" />
+    <None Include=".git\objects\7a\f3d52da1bc5510be9a1c2006f30f5196826c89" />
+    <None Include=".git\objects\7b\095e4a3a646c88257d0294ced9ea3e8507ec0f" />
+    <None Include=".git\objects\7b\728626a0578cacd48a4c505b09959ef0dc51cf" />
+    <None Include=".git\objects\7b\81b3d5cfe9b6e2dca1ff7045b58345f820de0c" />
+    <None Include=".git\objects\7b\994155c1a9ceff827c7a9f977a62c6dfd97378" />
+    <None Include=".git\objects\7b\a4e896b83314995fe80a78c61c9cf578ccd782" />
+    <None Include=".git\objects\7d\04c6d1ef16453f7e73d9cb34e746e248905d3c" />
+    <None Include=".git\objects\7d\c171f52dbe61caf6e2ab5e82e23c0126411bf8" />
+    <None Include=".git\objects\7d\dea44143c88ad71241e7fc531884a552ba9b28" />
+    <None Include=".git\objects\7e\9209739aeb7563b6ff1c673702014b248c0483" />
+    <None Include=".git\objects\7e\d679720cc43fb6d41b61e62dc16ae8a769f62e" />
+    <None Include=".git\objects\7f\724af880d6512af0a5572a3215f90266848189" />
+    <None Include=".git\objects\7f\751734600628139a2f0df169eebca62b74ce89" />
+    <None Include=".git\objects\7f\a47c928539f929d7f8e03ea72daba55a9d5267" />
+    <None Include=".git\objects\7f\c9abdb320463915c1645d9f4fc4ad8c1d376bc" />
+    <None Include=".git\objects\80\1a916fbd551786c33736eb6970e2e89d05baf6" />
+    <None Include=".git\objects\80\9097970309a50c00e9a593731246ae19911a26" />
+    <None Include=".git\objects\81\1c73650fcc8703fe2ceb3b8c2219513ed415c4" />
+    <None Include=".git\objects\81\b9ce94405ccccb3b311cd3f7091f4998c69ea4" />
+    <None Include=".git\objects\82\3645b380540b9a63a10844ea14dc3ff77f69c2" />
+    <None Include=".git\objects\82\5122f19cf01412d9eda8c8038b940b93b2308d" />
+    <None Include=".git\objects\82\a36cb00783fd438f337c20edd83639186d4e0a" />
+    <None Include=".git\objects\82\b014f1d7a1cd918dc8d9875e60ca4f1b2032dd" />
+    <None Include=".git\objects\83\74e20d38d375375eab7388618d75bf2941dd0e" />
+    <None Include=".git\objects\83\dafddc01ee9d084a41765bc297b6e2209c0558" />
+    <None Include=".git\objects\84\8cb49cb852dd792ac79fda62e5d970e792bc95" />
+    <None Include=".git\objects\84\9a43dfb956b1cd3d6ec05c26d3479f33ea26b0" />
+    <None Include=".git\objects\84\bbb89c14cfaf2df4747a3444ac7189ee12c4ac" />
+    <None Include=".git\objects\84\d10c468db24ae035bc8f7d058de2217362ebae" />
+    <None Include=".git\objects\86\552afc702c23caf8498860a42d325b39297230" />
+    <None Include=".git\objects\87\1e78eeda9f316239d10d5c9719c4ba9a202e9e" />
+    <None Include=".git\objects\87\6e7a2fb33ca66d830d1f43bc7ca38d95f1fa23" />
+    <None Include=".git\objects\87\a8c4913d719b404f99a624cd4e7831540113f2" />
+    <None Include=".git\objects\88\41f4e0d1d7a8964691f66d06ac46432614c43f" />
+    <None Include=".git\objects\88\55a154db990eab188c387dd6ad9dbca02a00f3" />
+    <None Include=".git\objects\8a\53b6cfe3cdc3bc59120867a443a43fb1a45c70" />
+    <None Include=".git\objects\8a\ce7459013dce5df2b710f7bbda19b893d52764" />
+    <None Include=".git\objects\8b\36e7854887bd413cce7c8bed4a15cf50d8583d" />
+    <None Include=".git\objects\8b\5504ecfbb1bfbb008957f80ac70f8fcdab91dd" />
+    <None Include=".git\objects\8b\5cfaf724a5c3ad8e14470a6f0874e16e9bca1e" />
+    <None Include=".git\objects\8b\769f3a688bedd430edd847843cc7118cf2aee9" />
+    <None Include=".git\objects\8c\49c8deaefdfa711bbb33fe70800ec2e28b6d98" />
+    <None Include=".git\objects\8d\459f6044d19133d0504d3f97cd15c3f772b52d" />
+    <None Include=".git\objects\8d\6ffe0cb1261623195a53abe85da7b50381371b" />
+    <None Include=".git\objects\8d\77d78b3e5c37c5a02c1b1959fbf62620177d61" />
+    <None Include=".git\objects\8d\8444c96f858fb394c629840384a94cd4e66741" />
+    <None Include=".git\objects\8d\c75d6f96ba5a33cb59c3d328c779482f6902e0" />
+    <None Include=".git\objects\8d\e0c205a405bda087b4f81b383eb3b2aa9321ea" />
+    <None Include=".git\objects\8e\1348f3a72c53dc8b4dd26ea1c592a2d80f69ec" />
+    <None Include=".git\objects\8e\68f8d0ea0f3abd302a89787628162beef8e477" />
+    <None Include=".git\objects\8f\679270cc49d5638114a442866487ed984e9b1d" />
+    <None Include=".git\objects\8f\7ea0ffb1ce8c3b21d435ed871bd86e7f21a132" />
+    <None Include=".git\objects\90\437f1b1ff5e2090337523002e4d8216e749efa" />
+    <None Include=".git\objects\90\822f4b36cc8513f2d13e96304dc141daa08aec" />
+    <None Include=".git\objects\90\8b39ab5b6604f062f3cde7d0d4e03b57e4b4f0" />
+    <None Include=".git\objects\90\ae30e6a7c8db9bf2e4982393f6c329d24d25f8" />
+    <None Include=".git\objects\91\e0d5805f9058c612bfa0ed6bb58f51bb68a91d" />
+    <None Include=".git\objects\92\6e6f74054ce56f6fe63fff236eeadefc001d8c" />
+    <None Include=".git\objects\92\d70beb884366331a02c45c0f460bcd0d6ad5ed" />
+    <None Include=".git\objects\93\e58927fa208bd59bd5975f5b81d024c26346ee" />
+    <None Include=".git\objects\94\51bbb12c8ee669acb4b7d899b286448216d8c7" />
+    <None Include=".git\objects\95\0006d99e8f5ec48e569dcbaa7b43b1db5fb965" />
+    <None Include=".git\objects\95\1227df484168956805f65b61686b148b3910cb" />
+    <None Include=".git\objects\95\14c5975a4339cbff69d5da1d718719ffb2decc" />
+    <None Include=".git\objects\95\1a9d02a8ca30dc0b7bdf4b098baf00d2c5dc89" />
+    <None Include=".git\objects\95\3c7a7c076829005d6af827b3fdb3a61cffb91d" />
+    <None Include=".git\objects\95\66f7aba0d308b7254a26d7434e205ab43a37cb" />
+    <None Include=".git\objects\95\764d92403d4e3742445e70fe459134e9dc1eaa" />
+    <None Include=".git\objects\96\1dcd060ee1442a8d1d459a97c7c7208d090386" />
+    <None Include=".git\objects\96\20f9fbe47e1beafee4c187edfe9638627b63ec" />
+    <None Include=".git\objects\97\74af7afbe163781065209d15c17fe04e752ca8" />
+    <None Include=".git\objects\98\9aa48ebffc8f09be292db4ffe939af1c598527" />
+    <None Include=".git\objects\99\c7109c394ecf4402488bb227e12eaf0596c59e" />
+    <None Include=".git\objects\99\df72a933217493f3f87b4b53ebd2dfc545e0f0" />
+    <None Include=".git\objects\9a\16f8f8d843e8070891d44d75df8df525ff6b78" />
+    <None Include=".git\objects\9a\548406dad7092fc25fe9e88a7094a61576d7ac" />
+    <None Include=".git\objects\9a\5b77e4b817b1cdedd12ad67e6613195a3484ea" />
+    <None Include=".git\objects\9a\b20a575189ef8a7f5817d382c65eead585f0de" />
+    <None Include=".git\objects\9a\e25fb8e1e7ac13fc873bfa813fd65331cbde02" />
+    <None Include=".git\objects\9b\ad2f599da6bb30b49e2886727c96beb2e898be" />
+    <None Include=".git\objects\9b\f58a423394f54f1d334ca8e206330081ba76c4" />
+    <None Include=".git\objects\9c\4ec190309e8ee99930452d56178af4d20d5287" />
+    <None Include=".git\objects\9c\677f6b2173d5b13861793815d92dc5439dd9f5" />
+    <None Include=".git\objects\9d\52e7efcced54b3f93a258cb46407a19f4b6ed5" />
+    <None Include=".git\objects\9d\540d261c2e8174abfd084914cd59fbc3e932db" />
+    <None Include=".git\objects\9e\c072bf6b75625f6c3290f9cebae972ff8d12c0" />
+    <None Include=".git\objects\9f\19371e52aae6b09a75496d69e7bab01bfeb96a" />
+    <None Include=".git\objects\9f\38851fdc891c8e7f7275debe26f2864a9af71f" />
+    <None Include=".git\objects\9f\ddd73c0680cf00360c7219b00add6d2a2d6174" />
+    <None Include=".git\objects\a0\d4cecb9124403d92be68e81985a0284377fa79" />
+    <None Include=".git\objects\a0\d5102d9676db389da608874d738998349d901b" />
+    <None Include=".git\objects\a1\41bcab1970de98cec6c725dffed3252dab2ee4" />
+    <None Include=".git\objects\a1\eb8f29abaf65920405f521abf64d11c492b801" />
+    <None Include=".git\objects\a1\f8f7179b092c1c89df6f8db47b264fd6029f47" />
+    <None Include=".git\objects\a2\2cc79cf7deb6f5bbba7786602f4829ceb33e4b" />
+    <None Include=".git\objects\a3\06d9bd8dfa5405301cfd6be2aff6b10e3f6d85" />
+    <None Include=".git\objects\a3\3d8e2558ff5a142d1b6371a08eac9d8bd9bbeb" />
+    <None Include=".git\objects\a4\b2d460f3899c5f53609492c72cf5b90c0dda8e" />
+    <None Include=".git\objects\a4\b85a9fc24b27b39a40e1b5f78dca790cde2dee" />
+    <None Include=".git\objects\a5\4e9a7ffb1de954dd0e8e97dbca889c93d1ae63" />
+    <None Include=".git\objects\a5\aa57b2d72cc992fb07acde4802fedff1c89130" />
+    <None Include=".git\objects\a6\33eaa0bf0f3e3026591b583cc7dfb0fbc8a1d3" />
+    <None Include=".git\objects\a6\ad9b0f8bb64e9126f7588938dad7450172410a" />
+    <None Include=".git\objects\a6\e8c1662fd068f3f47c06931a69a4b121b424b2" />
+    <None Include=".git\objects\a7\a586a3dfdeb6c947cbab516a0785a5a22bac40" />
+    <None Include=".git\objects\a7\fd9b9b0a094cc5313e6331086fab7b496a9459" />
+    <None Include=".git\objects\a9\074e4082055df9bb4816157130b453c0034bfc" />
+    <None Include=".git\objects\a9\6ad167addc25351192e9468c0ceab967b5f5ed" />
+    <None Include=".git\objects\a9\de6fb6fd3115ffb67820681fc0e6c042989fbf" />
+    <None Include=".git\objects\aa\0f4a244a6a4ccfa3b8b199a2465796951a6c5e" />
+    <None Include=".git\objects\aa\a804e41b75853bd7bf455e527333162dc4ac39" />
+    <None Include=".git\objects\ab\375908dd49e791d282dbe843eb2b33944aeb2c" />
+    <None Include=".git\objects\ab\f7a35e24ce24b351a11712b7378b775a61351e" />
+    <None Include=".git\objects\ac\0d35ebf35770be8f6a196b5066ecfc3557def0" />
+    <None Include=".git\objects\ac\bbb657daa9d0b94502a41ae8eab29b12dddbd2" />
+    <None Include=".git\objects\ac\f8329263cf7a56437d6b17d9d2824cebc4939a" />
+    <None Include=".git\objects\ad\128dc50e9bcb895efc88cddecca269c1e8f0de" />
+    <None Include=".git\objects\ad\152fe891c73c945085683c2ed3b0fc53b27cb0" />
+    <None Include=".git\objects\ad\49b77bf843d12aadf56dad5e682cdc5a89b55a" />
+    <None Include=".git\objects\ad\9805779eb069574d373933009c5bd1f27b45bb" />
+    <None Include=".git\objects\ad\fbf950e27123524741e8d9a9d8d70ea5f5637c" />
+    <None Include=".git\objects\ae\07318045d9f45e52e137fb6d9b45ed4b13cc60" />
+    <None Include=".git\objects\ae\14a6906007d56092655981b45cf9cbcab0b414" />
+    <None Include=".git\objects\ae\655d3770dab74485e13c0a1988380f8b7f0f4d" />
+    <None Include=".git\objects\ae\7088c1ab25a1bbc4329f0aac6f96da16f4e6c6" />
+    <None Include=".git\objects\ae\a6c8fd0502ba287a928945dea4c51d1d4f3d08" />
+    <None Include=".git\objects\ae\ccb80b29afaf98e0db5601a3a3eb2702060548" />
+    <None Include=".git\objects\af\0fde158fddeedeece8e381f961ee5f8aaf8b7d" />
+    <None Include=".git\objects\af\3ab424643976c121bf714101bea26c53846f90" />
+    <None Include=".git\objects\af\7495974dfd948e99ce5bd32eb251fcfcf1fbca" />
+    <None Include=".git\objects\af\7dbebbacef595e3089c01c05671016c21a8304" />
+    <None Include=".git\objects\af\89e409a20fd0018b0a76e21302241edd4c9b3a" />
+    <None Include=".git\objects\af\fb97717cda63b901dafa25cbe1303907e73893" />
+    <None Include=".git\objects\b0\11a57b7e574ccc6366d99d9b20145788e77544" />
+    <None Include=".git\objects\b0\a3308975487f2f609c881d936d1c0390a21a69" />
+    <None Include=".git\objects\b2\0117a4418bb727f78c2ab235096453901b438e" />
+    <None Include=".git\objects\b2\68ed3afc8f34eca888491422005aa72daf8cd3" />
+    <None Include=".git\objects\b2\d5f4ece6196f17caef50c1f821705fef4a33cf" />
+    <None Include=".git\objects\b4\07b4012b4be55b2e243a050ae1646441d7b573" />
+    <None Include=".git\objects\b4\0a5fd569c758922135e678972d1fa0589154cc" />
+    <None Include=".git\objects\b4\5c1263cec6f8c27cc431926b398d2606a02680" />
+    <None Include=".git\objects\b4\7f1f18e8ee840e582f0dbd54b36266d382e8f0" />
+    <None Include=".git\objects\b4\8d4d201a92ac7ab8aa098df0d0757026c6d72e" />
+    <None Include=".git\objects\b5\7c89e694728abd476f3f4dd7288093c0236683" />
+    <None Include=".git\objects\b5\c5ffe428a2e51e3bd4da74945b925038c195f1" />
+    <None Include=".git\objects\b5\ca5f198ff9b796f6b7aa3ea7546b14c245ad8e" />
+    <None Include=".git\objects\b5\e40d52e0738464c45dd1ef0d784eccc6012f3a" />
+    <None Include=".git\objects\b7\6a10a57355d36631a6103cfd770aa30f99dd04" />
+    <None Include=".git\objects\b8\7811d2e077b4ab4011e31a78bf01803d1b2e9d" />
+    <None Include=".git\objects\b8\df87e7e898d9043d350c82542a4f6e55147808" />
+    <None Include=".git\objects\b9\8521d1f77927573cca5a18935492a056903880" />
+    <None Include=".git\objects\ba\0e5cc88835a40f2a47d24d31ea6e57fe716bbe" />
+    <None Include=".git\objects\bb\3204bfa33fcd8c053d6365c307027ddea0e700" />
+    <None Include=".git\objects\bb\d91a55096691d71147aab6e8ea6bdb360267bb" />
+    <None Include=".git\objects\bb\e3e2b28725d4f6b6e2b6137ef631def8203a04" />
+    <None Include=".git\objects\bc\53cfab6ae62360955ca7f5f8c1a2bf072ff68f" />
+    <None Include=".git\objects\bc\548a472eca551faff18b4d60b75f87660b7c04" />
+    <None Include=".git\objects\bc\77b0fb8b6698d2e390844cd216dabf0d7925b0" />
+    <None Include=".git\objects\bc\942505dabffc6a665643d0a03ad806b2a325e3" />
+    <None Include=".git\objects\bc\e0e492176098b3f3746f858198fe2883b6ab2e" />
+    <None Include=".git\objects\bd\00835e7364fac4164c43e93076e14a7d3dbc33" />
+    <None Include=".git\objects\bd\6e43e3641de22bf1de3641722ebe76c28c34ca" />
+    <None Include=".git\objects\bd\8b143b235d5ec529a0a90534a11d663f171c4f" />
+    <None Include=".git\objects\be\02bb792e71ddbf3d7faedbcf664c90bc53c79f" />
+    <None Include=".git\objects\be\357556b0416abf957aedd05ab1429dd039e6fb" />
+    <None Include=".git\objects\be\b0da98085ea8dcc7306f716c864a9c2903320d" />
+    <None Include=".git\objects\be\c599739b755c919ddfaad47f85fc11454db4cb" />
+    <None Include=".git\objects\c0\cde0795730ddd339e9d7e171cf981413d55770" />
+    <None Include=".git\objects\c1\acb6d3d63347df2e5a9371de0824f193b461af" />
+    <None Include=".git\objects\c2\5c7f27309e9bb1813d62790f9d39fcd03d0a08" />
+    <None Include=".git\objects\c2\697038e0aad151a6bcd0c2765cea5b8c161328" />
+    <None Include=".git\objects\c2\b43998b34286ddbf62b64e204d7372383c25d9" />
+    <None Include=".git\objects\c4\1ef0ab8379ee6384f4eca0de03e367ec073366" />
+    <None Include=".git\objects\c4\9c0d736ff476a5ba61f63abd95988dd9fb6e10" />
+    <None Include=".git\objects\c4\fc9e3c459077361d09b7cd7f55eedf5badc31f" />
+    <None Include=".git\objects\c5\e16868353dc12ae1cbe2c36646d57f54530042" />
+    <None Include=".git\objects\c6\718f8bf26113e4da288e504f97ff82be0ff6f6" />
+    <None Include=".git\objects\c6\f1d761a3613459073dc01b038ccdc41bf95a02" />
+    <None Include=".git\objects\c7\575efd1918ca749a5212b4236ce00291727d08" />
+    <None Include=".git\objects\c7\8ee796a59855b45551c1720082d7f6039e76fd" />
+    <None Include=".git\objects\c8\a79ffd55696218404c7698daf2cfe9c6389fbf" />
+    <None Include=".git\objects\c9\0510df2d6ebc0e7326dbbc2a7f0e669e86eb30" />
+    <None Include=".git\objects\c9\36ccde35ad941ad560a8eea95f5d63de3133f0" />
+    <None Include=".git\objects\c9\c4a72e9f32c230f1d3dda5f6e46705dbb678f8" />
+    <None Include=".git\objects\ca\4a1bd79371646446d6c4a04e29ed56769b2edd" />
+    <None Include=".git\objects\ca\550adc6a7388f34b0f4e6402f46abed810edf0" />
+    <None Include=".git\objects\ca\8d47f063039048bb6c08b019418bdaa73b6b18" />
+    <None Include=".git\objects\cb\23a326164629996fa1299d45d6909a870069b2" />
+    <None Include=".git\objects\cb\332f7d6390c71a8b001d78061d8968a6043bdb" />
+    <None Include=".git\objects\cb\7681a8d42ea98f53d1e7c53eaa45a6e69cf21e" />
+    <None Include=".git\objects\cb\7bb75941b1a8cc2758c657fe7f47fe9097e4f4" />
+    <None Include=".git\objects\cc\8fe76b099e82d04217ad05d35933b1e18bac84" />
+    <None Include=".git\objects\cc\d433a8c656b9f7740f71d751edf0ff54a78eff" />
+    <None Include=".git\objects\cd\3ab60040b31ccbd2e330838e74d328e4c12fcf" />
+    <None Include=".git\objects\cd\53a0248a83e511ec2a191e593bbe0ae4f0f5dd" />
+    <None Include=".git\objects\cd\91c6ba48efa4add290d687bba6b8f757820a87" />
+    <None Include=".git\objects\cf\6e15e06d1e42315c1d49750da11f29b2f46845" />
+    <None Include=".git\objects\cf\7f36f7a3b2c6ffe70fd54dea45a063a520cb68" />
+    <None Include=".git\objects\d0\5c33479223ba05da4cb093a16db3f2a1ae6b00" />
+    <None Include=".git\objects\d0\acab5c4c1a3b5ea574b55daa39d0f69974a29d" />
+    <None Include=".git\objects\d0\be230f24fdd7e43e6a42b019ee897c556512c8" />
+    <None Include=".git\objects\d1\837f34858eeb6391cdd9a50b1b3701f528e977" />
+    <None Include=".git\objects\d1\faefab341a7e90807299625cf14ca757b3e3f8" />
+    <None Include=".git\objects\d2\3d2c1833cb56d8800b755314c709d404fc02dd" />
+    <None Include=".git\objects\d2\ed2747ae883f28e297d2807383f76b5108f61e" />
+    <None Include=".git\objects\d3\2fe4b4e073e6d0ed2cdd910a9c7bb6e507c516" />
+    <None Include=".git\objects\d3\c49be979de7a006e6ae59a1e79b68dfac3ccd3" />
+    <None Include=".git\objects\d4\2ca01d7862a11d373bda88d18ddc63c91091d0" />
+    <None Include=".git\objects\d4\484ba2867208e78565280dffad786452aa91df" />
+    <None Include=".git\objects\d4\9b01539c7aa3e27b5414f92ea1b73dfc0c62a8" />
+    <None Include=".git\objects\d4\a481a228930ea5df25891597d4e8fad40d2f8e" />
+    <None Include=".git\objects\d4\ececd31d80a093dc162aa4c7a3f55f8699ac26" />
+    <None Include=".git\objects\d5\63d9752be7ab44773f7d5a7cf682291a8b0bfd" />
+    <None Include=".git\objects\d5\935119a35f83de42974e69d555b49236b23121" />
+    <None Include=".git\objects\d6\3b5052a2b1e7d38338460a05daf46d2a2883c8" />
+    <None Include=".git\objects\d6\bfa7b9feccfeeae95037cb4ae7ae1af16f061d" />
+    <None Include=".git\objects\d7\b51a9f8dc8ced3791b42fd5864b3ad6513f57c" />
+    <None Include=".git\objects\d8\2b38a607772bf85f500d5a84b59358eb8cc81d" />
+    <None Include=".git\objects\d8\46161e117ed1bc4768a20c6b5b3be9197f3ec9" />
+    <None Include=".git\objects\d9\7205a8f00f064a35405042fd64ec65dda842db" />
+    <None Include=".git\objects\d9\859dfc20a5011e2d711ed36846ac7254805207" />
+    <None Include=".git\objects\d9\c1b48bb744f98aa6f224b295a81b93c06d6d8c" />
+    <None Include=".git\objects\db\1ba49b5c6e912a71c18083d19808dfac6b734e" />
+    <None Include=".git\objects\db\27eb140ea382e1df42355f7488a1d63225b6a8" />
+    <None Include=".git\objects\db\4044386249709426c448b08a528db2c5e4e554" />
+    <None Include=".git\objects\db\55237fb78116394bfe2f975d7fc1f9ddd12068" />
+    <None Include=".git\objects\db\fdea51c54fc88404492770e276b045b1e7db58" />
+    <None Include=".git\objects\dc\933493c2aa18a4b2a86d1ac84a8eff99026c57" />
+    <None Include=".git\objects\dc\a601eed74e11206501ba6a87746de84fe6a981" />
+    <None Include=".git\objects\dc\c235c8859e60c450e9834c4eeef58ddc65de88" />
+    <None Include=".git\objects\dd\1c3fbc8d5c4bcc03a6d6635097cdf4b882bec8" />
+    <None Include=".git\objects\dd\5060b7afd21e624ee3db44a973f1445c562802" />
+    <None Include=".git\objects\dd\9ba058fff15173e07f233cedcc7050477fb05d" />
+    <None Include=".git\objects\dd\a11c6a904afb78e14887aa3b54245420dc8b76" />
+    <None Include=".git\objects\de\00f44f91c2d426ce3a4d85b43292dba952b508" />
+    <None Include=".git\objects\de\29a0e322221798811b7af9a0e4de7f4b13cc63" />
+    <None Include=".git\objects\de\6e8e1638fb8a3001ef79bf4120b73009c9ef24" />
+    <None Include=".git\objects\df\6a5628470a0ed66a7d68547bdfbd9c15b182c4" />
+    <None Include=".git\objects\df\937a975c59c0e9a4bea16c7ba725507a048838" />
+    <None Include=".git\objects\e0\0d5253b93a5487df45b886bdd6df3733bb8617" />
+    <None Include=".git\objects\e0\7b47f1d5ae4cd3aa30e28e888ffd5527f6a6f2" />
+    <None Include=".git\objects\e1\eff5bb06969aec24967d658e6c1794ac86628c" />
+    <None Include=".git\objects\e2\13a72df4c70c9208319759922b7195d69f7a18" />
+    <None Include=".git\objects\e2\54406797c551607911dd8fdfea90a29dd1076f" />
+    <None Include=".git\objects\e2\79dc1d11a7949b4359522f9deab01187a8a61a" />
+    <None Include=".git\objects\e2\90897a0fe297cf627f1c6a1fca40bb6fb3a089" />
+    <None Include=".git\objects\e3\6e60372ff9c1cc8b0576a2460032078e576fdb" />
+    <None Include=".git\objects\e3\9e629abda774705c0fb5d9d9901ea6a3457bd8" />
+    <None Include=".git\objects\e3\cc73fdee4890c6e6f03cce58aed90a671d800e" />
+    <None Include=".git\objects\e3\dd8e73fb4b91ed9359df08c199374631042edb" />
+    <None Include=".git\objects\e4\70b9490357716a7e8052b94f3aa851ac8a56e8" />
+    <None Include=".git\objects\e5\1b367a316c1d107ecf931913614eb9c476fd10" />
+    <None Include=".git\objects\e6\0600837c9799b90e0c314ea68e4ec50eb09048" />
+    <None Include=".git\objects\e6\9de29bb2d1d6434b8b29ae775ad8c2e48c5391" />
+    <None Include=".git\objects\e6\b7b04c042fa2b45674a2012d2ac6db766354c9" />
+    <None Include=".git\objects\e6\c48db11be7e7baa24884c9ce236f8f14012153" />
+    <None Include=".git\objects\e6\dbee672560de02648a49f7fbc133d8fcea6e14" />
+    <None Include=".git\objects\e7\5afbe2560daad417a56230065d69cb2afa112e" />
+    <None Include=".git\objects\e7\76f3882fde79c08710e86033bf4d2cedd21ff8" />
+    <None Include=".git\objects\e8\e4b66a51dd0d948f7b85d2f7f16102f85e7aba" />
+    <None Include=".git\objects\e8\f3073b0bebc77b02a7cd0e45f6184307264be4" />
+    <None Include=".git\objects\e9\26f2027f623f7300da1f9bac00107807a9ef5d" />
+    <None Include=".git\objects\e9\7d37179c7a2b0a61dfe72d8ac1a6a2184ae42b" />
+    <None Include=".git\objects\ea\3ce43cb605f706e4dda24d95ab5a83cccb60f8" />
+    <None Include=".git\objects\ea\a9902955bc9aee5399d1d610143385d23e1bdf" />
+    <None Include=".git\objects\eb\2f4837514ba3076fe263b8e177d0fa7b7ddd0e" />
+    <None Include=".git\objects\eb\d65655738dfb980a3acc33ca556efa9de6a661" />
+    <None Include=".git\objects\ec\1b6bf084c750cbaf6e110298a51f8754bfae90" />
+    <None Include=".git\objects\ec\33af04fa987335b3a423e02f34bd06e95fd135" />
+    <None Include=".git\objects\ec\802910a124bd3d6083311ce353c995cb384a18" />
+    <None Include=".git\objects\ed\173d55e17e121eab9d6c874f853c8c1d94292c" />
+    <None Include=".git\objects\ee\588590b61ab7e10b7b3d914d53d7607dcef0df" />
+    <None Include=".git\objects\ee\c3583f79c86c8fdf2a8e690db1eec29cc3f91d" />
+    <None Include=".git\objects\ee\ec5e296c72dea08a2e30be1f2bcf79fb566118" />
+    <None Include=".git\objects\ef\5c937a51aa69b13720f054a32f4af98a00c789" />
+    <None Include=".git\objects\ef\a0b5c2562d05f8070352529714a0693b9e3bba" />
+    <None Include=".git\objects\f0\36f4186b96115865cdcba9e8abd1765b7a9bad" />
+    <None Include=".git\objects\f0\4fd909304b3fef8fbb80196182680cbdc2fde4" />
+    <None Include=".git\objects\f2\1c24afc041fbfc635897ba1f08045471b387dc" />
+    <None Include=".git\objects\f2\6dd8e1645f6f67ec7ccb9c406a7b536a8f25e0" />
+    <None Include=".git\objects\f2\afd84146e8392cf26b779d3e013b5d123dcdb1" />
+    <None Include=".git\objects\f3\3cddc59d4fa83b7a445e65ab4483d2bd9e76b2" />
+    <None Include=".git\objects\f3\66f53eeb3623efe660265943db04aabcf6362a" />
+    <None Include=".git\objects\f4\0b8265bd783b3dfb3e2a1dd2e6db0d05de1a1a" />
+    <None Include=".git\objects\f4\73d9f8ac3745fa6c50916db32023e47af78b67" />
+    <None Include=".git\objects\f5\0e6c86f100fb0633bf75d2fd2ce9bbd5199e8d" />
+    <None Include=".git\objects\f5\500af189a79ac7002a218f1de31dcec472a3d2" />
+    <None Include=".git\objects\f6\1298a244f6f6e66cbfc3df465c99bfec779967" />
+    <None Include=".git\objects\f6\61897f484b00487851222e540f730202100aa5" />
+    <None Include=".git\objects\f6\b1a00adc65b1e18908a72a2b891af3b4b14c09" />
+    <None Include=".git\objects\f7\03c0169b09570a8199b5e5aa93ba21929c800f" />
+    <None Include=".git\objects\f7\06762cc5f7b2b9192551717975e2645083b3fc" />
+    <None Include=".git\objects\f7\1adb54491b7f3beeaf8f5e92e9e9a81b44718c" />
+    <None Include=".git\objects\f7\bc9df1151dc6c16cbca443594a9161f966383d" />
+    <None Include=".git\objects\f8\17ace66280016365f205b49ab98ca963c8dacb" />
+    <None Include=".git\objects\f8\b4888565caadc7510be75682268d6c18edd6de" />
+    <None Include=".git\objects\f8\f12d3cc00c33fc93c6956f30a4233e8fbc9947" />
+    <None Include=".git\objects\f9\988b2cae43ac853135f538ede8450ffee7e944" />
+    <None Include=".git\objects\f9\cd88c0a0357939f847bc80c3285d0b8ba74386" />
+    <None Include=".git\objects\f9\ce2fd7c3ba895a225ca5d66fde43700212760d" />
+    <None Include=".git\objects\fa\019d1222f00688fc198b30e75152c6f7a6d298" />
+    <None Include=".git\objects\fa\2f3635c11c898ff764ad8198fd7e51fd09ddf2" />
+    <None Include=".git\objects\fa\7f3075140a956737c83f1c19bb65d02536a434" />
+    <None Include=".git\objects\fa\88062198566e987da9e9da9991565c2f80e703" />
+    <None Include=".git\objects\fa\c75a3c8bb88a8b5fbebf66c22613efe119c719" />
+    <None Include=".git\objects\fb\7e38d53ec11421974b36daf9ab529b8c3c0803" />
+    <None Include=".git\objects\fb\d1dcd6e6d6efbad4a4954a00e2cd1fc9cfd791" />
+    <None Include=".git\objects\fc\f07e875d69c18becc24153f13f0e615897b6cb" />
+    <None Include=".git\objects\fe\01e087724a21a73cd9ad41f6270e7ee6097aba" />
+    <None Include=".git\objects\fe\3e3daec9506a42047f482dd9ad88e1d53e3897" />
+    <None Include=".git\objects\fe\9a7b4b006bcf1c4d35eae053ab6e07fedaae9a" />
+    <None Include=".git\objects\fe\a6eb816dff7c14fe7c7e89de907dcffee70863" />
+    <None Include=".git\objects\fe\b75921909192b1e303ee750ccad307b005b669" />
+    <None Include=".git\objects\fe\f812f5216f1c49e464a47ceadf9ab1f41a9686" />
+    <None Include=".git\objects\ff\35a18570b4d9cc1dd07406de0cdd7ec49aca02" />
+    <None Include=".git\ORIG_HEAD" />
+    <None Include=".git\refs\heads\dev" />
+    <None Include=".git\refs\heads\main" />
+    <None Include=".git\refs\remotes\origin\dev" />
+    <None Include=".git\refs\remotes\origin\main" />
+    <None Include=".git\refs\stash" />
+    <None Include=".vs\Aplikacja2\.vs\Aplikacja2\DesignTimeBuild\.dtbcache.v2" />
+    <None Include=".vs\Aplikacja2\.vs\Aplikacja2\project-colors.json" />
+    <None Include=".vs\Aplikacja2\.vs\Aplikacja2\v17\.futdcache.v1" />
+    <None Include=".vs\Aplikacja2\.vs\Aplikacja2\v17\.suo" />
+    <None Include=".vs\Aplikacja2\Aplikacja2.csproj" />
+    <None Include=".vs\Aplikacja2\bin\Debug\net6.0-windows\Aplikacja2.deps.json" />
+    <None Include=".vs\Aplikacja2\bin\Debug\net6.0-windows\Aplikacja2.runtimeconfig.json" />
+    <None Include=".vs\Aplikacja2\obj\Aplikacja2.csproj.nuget.dgspec.json" />
+    <None Include=".vs\Aplikacja2\obj\Aplikacja2.csproj.nuget.g.props" />
+    <None Include=".vs\Aplikacja2\obj\Aplikacja2.csproj.nuget.g.targets" />
+    <None Include=".vs\Aplikacja2\obj\Aplikacja2_1xe4atw4_wpftmp.csproj.nuget.dgspec.json" />
+    <None Include=".vs\Aplikacja2\obj\Aplikacja2_1xe4atw4_wpftmp.csproj.nuget.g.props" />
+    <None Include=".vs\Aplikacja2\obj\Aplikacja2_1xe4atw4_wpftmp.csproj.nuget.g.targets" />
+    <None Include=".vs\Aplikacja2\obj\Debug\net6.0-windows\Aplikacja2.AssemblyInfoInputs.cache" />
+    <None Include=".vs\Aplikacja2\obj\Debug\net6.0-windows\Aplikacja2.assets.cache" />
+    <None Include=".vs\Aplikacja2\obj\Debug\net6.0-windows\Aplikacja2.csproj.AssemblyReference.cache" />
+    <None Include=".vs\Aplikacja2\obj\Debug\net6.0-windows\Aplikacja2.csproj.CoreCompileInputs.cache" />
+    <None Include=".vs\Aplikacja2\obj\Debug\net6.0-windows\Aplikacja2.designer.deps.json" />
+    <None Include=".vs\Aplikacja2\obj\Debug\net6.0-windows\Aplikacja2.designer.runtimeconfig.json" />
+    <None Include=".vs\Aplikacja2\obj\Debug\net6.0-windows\Aplikacja2.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include=".vs\Aplikacja2\obj\Debug\net6.0-windows\Aplikacja2.genruntimeconfig.cache" />
+    <None Include=".vs\Aplikacja2\obj\Debug\net6.0-windows\Aplikacja2_1xe4atw4_wpftmp.AssemblyInfoInputs.cache" />
+    <None Include=".vs\Aplikacja2\obj\Debug\net6.0-windows\Aplikacja2_1xe4atw4_wpftmp.assets.cache" />
+    <None Include=".vs\Aplikacja2\obj\Debug\net6.0-windows\Aplikacja2_1xe4atw4_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include=".vs\Aplikacja2\obj\Debug\net6.0-windows\Aplikacja2_MarkupCompile.cache" />
+    <None Include=".vs\Aplikacja2\obj\Debug\net6.0-windows\Aplikacja2_MarkupCompile.i.cache" />
+    <None Include=".vs\Aplikacja2\obj\Debug\net6.0-windows\Aplikacja2_MarkupCompile.lref" />
+    <None Include=".vs\Aplikacja2\obj\Debug\net6.0-windows\Aplikacja2_o4tbbwvh_wpftmp.AssemblyInfoInputs.cache" />
+    <None Include=".vs\Aplikacja2\obj\Debug\net6.0-windows\Aplikacja2_o4tbbwvh_wpftmp.assets.cache" />
+    <None Include=".vs\Aplikacja2\obj\Debug\net6.0-windows\Aplikacja2_o4tbbwvh_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include=".vs\Aplikacja2\obj\Debug\net6.0-windows\Aplikacja2_tiklth4w_wpftmp.AssemblyInfoInputs.cache" />
+    <None Include=".vs\Aplikacja2\obj\Debug\net6.0-windows\Aplikacja2_tiklth4w_wpftmp.assets.cache" />
+    <None Include=".vs\Aplikacja2\obj\Debug\net6.0-windows\Aplikacja2_tiklth4w_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include=".vs\Aplikacja2\obj\Debug\net6.0-windows\Aplikacja2_uiqwd1ac_wpftmp.AssemblyInfoInputs.cache" />
+    <None Include=".vs\Aplikacja2\obj\Debug\net6.0-windows\Aplikacja2_uiqwd1ac_wpftmp.assets.cache" />
+    <None Include=".vs\Aplikacja2\obj\Debug\net6.0-windows\Aplikacja2_uiqwd1ac_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include=".vs\Aplikacja2\obj\Debug\net6.0-windows\Aplikacja2_via2digh_wpftmp.AssemblyInfoInputs.cache" />
+    <None Include=".vs\Aplikacja2\obj\Debug\net6.0-windows\Aplikacja2_via2digh_wpftmp.assets.cache" />
+    <None Include=".vs\Aplikacja2\obj\Debug\net6.0-windows\Aplikacja2_via2digh_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include=".vs\Aplikacja2\obj\Debug\net6.0-windows\Aplikacja2_xer1yrzj_wpftmp.AssemblyInfoInputs.cache" />
+    <None Include=".vs\Aplikacja2\obj\Debug\net6.0-windows\Aplikacja2_xer1yrzj_wpftmp.assets.cache" />
+    <None Include=".vs\Aplikacja2\obj\Debug\net6.0-windows\Aplikacja2_xer1yrzj_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include=".vs\Aplikacja2\obj\Debug\net6.0-windows\Aplikacja2_zryrbi0u_wpftmp.AssemblyInfoInputs.cache" />
+    <None Include=".vs\Aplikacja2\obj\Debug\net6.0-windows\Aplikacja2_zryrbi0u_wpftmp.assets.cache" />
+    <None Include=".vs\Aplikacja2\obj\Debug\net6.0-windows\Aplikacja2_zryrbi0u_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include=".vs\Aplikacja2\obj\project.assets.json" />
+    <None Include=".vs\Aplikacja2\obj\project.nuget.cache" />
+    <None Include=".vs\Aplikacja2\obj\Release\net6.0-windows\Aplikacja2.AssemblyInfoInputs.cache" />
+    <None Include=".vs\Aplikacja2\obj\Release\net6.0-windows\Aplikacja2.assets.cache" />
+    <None Include=".vs\Aplikacja2\obj\Release\net6.0-windows\Aplikacja2.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include=".vs\Aplikacja2\obj\Release\net6.0-windows\Aplikacja2_MarkupCompile.cache" />
+    <None Include=".vs\Aplikacja2\obj\Release\net6.0-windows\Aplikacja2_MarkupCompile.lref" />
+    <None Include=".vs\Aplikacja3\.vs\Aplikacja3\DesignTimeBuild\.dtbcache.v2" />
+    <None Include=".vs\Aplikacja3\.vs\Aplikacja3\project-colors.json" />
+    <None Include=".vs\Aplikacja3\.vs\Aplikacja3\v17\.futdcache.v1" />
+    <None Include=".vs\Aplikacja3\.vs\Aplikacja3\v17\.suo" />
+    <None Include=".vs\Aplikacja3\Aplikacja3.csproj" />
+    <None Include=".vs\Aplikacja3\obj\Aplikacja3.csproj.nuget.dgspec.json" />
+    <None Include=".vs\Aplikacja3\obj\Aplikacja3.csproj.nuget.g.props" />
+    <None Include=".vs\Aplikacja3\obj\Aplikacja3.csproj.nuget.g.targets" />
+    <None Include=".vs\Aplikacja3\obj\Debug\net6.0-windows\Aplikacja3.AssemblyInfoInputs.cache" />
+    <None Include=".vs\Aplikacja3\obj\Debug\net6.0-windows\Aplikacja3.assets.cache" />
+    <None Include=".vs\Aplikacja3\obj\Debug\net6.0-windows\Aplikacja3.csproj.AssemblyReference.cache" />
+    <None Include=".vs\Aplikacja3\obj\Debug\net6.0-windows\Aplikacja3.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include=".vs\Aplikacja3\obj\project.assets.json" />
+    <None Include=".vs\Aplikacja3\obj\project.nuget.cache" />
+    <None Include=".vs\Praktyki-\project-colors.json" />
+    <None Include=".vs\Praktyki-\v17\.suo" />
+    <None Include=".vs\ProjectSettings.json" />
+    <None Include=".vs\slnx.sqlite" />
+    <None Include=".vs\VSWorkspaceState.json" />
+    <None Include=".vs\WindowsFormsApp4\DesignTimeBuild\.dtbcache.v2" />
+    <None Include=".vs\WindowsFormsApp4\v17\.futdcache.v1" />
+    <None Include=".vs\WindowsFormsApp4\v17\.suo" />
+    <None Include="Aplikacja3 — kopia\Aplikacja3.csproj" />
+    <None Include="Aplikacja3 — kopia\obj\Aplikacja3.csproj.nuget.dgspec.json" />
+    <None Include="Aplikacja3 — kopia\obj\Aplikacja3.csproj.nuget.g.props" />
+    <None Include="Aplikacja3 — kopia\obj\Aplikacja3.csproj.nuget.g.targets" />
+    <None Include="Aplikacja3 — kopia\obj\Debug\net6.0-windows\Aplikacja3.AssemblyInfoInputs.cache" />
+    <None Include="Aplikacja3 — kopia\obj\Debug\net6.0-windows\Aplikacja3.assets.cache" />
+    <None Include="Aplikacja3 — kopia\obj\Debug\net6.0-windows\Aplikacja3.csproj.AssemblyReference.cache" />
+    <None Include="Aplikacja3 — kopia\obj\Debug\net6.0-windows\Aplikacja3.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="Aplikacja3 — kopia\obj\project.assets.json" />
+    <None Include="Aplikacja3 — kopia\obj\project.nuget.cache" />
+    <None Include="Aplikacja3 — kopia\obj\Release\net6.0-windows\Aplikacja3.AssemblyInfoInputs.cache" />
+    <None Include="Aplikacja3 — kopia\obj\Release\net6.0-windows\Aplikacja3.assets.cache" />
+    <None Include="Aplikacja3 — kopia\obj\Release\net6.0-windows\Aplikacja3.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="Aplikacja3\Aplikacja3.csproj" />
+    <None Include="Aplikacja3\obj\Aplikacja3.csproj.nuget.dgspec.json" />
+    <None Include="Aplikacja3\obj\Aplikacja3.csproj.nuget.g.props" />
+    <None Include="Aplikacja3\obj\Aplikacja3.csproj.nuget.g.targets" />
+    <None Include="Aplikacja3\obj\Debug\net6.0-windows\Aplikacja3.AssemblyInfoInputs.cache" />
+    <None Include="Aplikacja3\obj\Debug\net6.0-windows\Aplikacja3.assets.cache" />
+    <None Include="Aplikacja3\obj\Debug\net6.0-windows\Aplikacja3.csproj.AssemblyReference.cache" />
+    <None Include="Aplikacja3\obj\Debug\net6.0-windows\Aplikacja3.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="Aplikacja3\obj\project.assets.json" />
+    <None Include="Aplikacja3\obj\project.nuget.cache" />
+    <None Include="Aplikacja3\obj\Release\net6.0-windows\Aplikacja3.AssemblyInfoInputs.cache" />
+    <None Include="Aplikacja3\obj\Release\net6.0-windows\Aplikacja3.assets.cache" />
+    <None Include="Aplikacja3\obj\Release\net6.0-windows\Aplikacja3.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="BarNieChlujnyJanek\App.config" />
+    <None Include="BarNieChlujnyJanek\BarNieChlujnyJanek.csproj" />
+    <None Include="BarNieChlujnyJanek\bin\Debug\BarNieChlujnyJanek.exe.config" />
+    <None Include="BarNieChlujnyJanek\obj\Debug\BarNieChlujnyJanek.csproj.AssemblyReference.cache" />
+    <None Include="BarNieChlujnyJanek\obj\Debug\BarNieChlujnyJanek.csproj.CoreCompileInputs.cache" />
+    <None Include="BarNieChlujnyJanek\obj\Debug\BarNieChlujnyJanek.csproj.GenerateResource.cache" />
+    <None Include="BarNieChlujnyJanek\obj\Debug\BarNieChlujnyJanek.csproj.SuggestedBindingRedirects.cache" />
+    <None Include="BarNieChlujnyJanek\obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="BarNieChlujnyJanek\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="BarNieChlujnyJanek\Properties\Settings.settings" />
+    <None Include="ConsoleApp1\bin\Debug\net6.0\ConsoleApp1.deps.json" />
+    <None Include="ConsoleApp1\bin\Debug\net6.0\ConsoleApp1.runtimeconfig.json" />
+    <None Include="ConsoleApp1\ConsoleApp1.csproj" />
+    <None Include="ConsoleApp1\obj\ConsoleApp1.csproj.nuget.dgspec.json" />
+    <None Include="ConsoleApp1\obj\ConsoleApp1.csproj.nuget.g.props" />
+    <None Include="ConsoleApp1\obj\ConsoleApp1.csproj.nuget.g.targets" />
+    <None Include="ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.AssemblyInfoInputs.cache" />
+    <None Include="ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.assets.cache" />
+    <None Include="ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.csproj.AssemblyReference.cache" />
+    <None Include="ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.csproj.CoreCompileInputs.cache" />
+    <None Include="ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.genruntimeconfig.cache" />
+    <None Include="ConsoleApp1\obj\project.assets.json" />
+    <None Include="ConsoleApp1\obj\project.nuget.cache" />
+    <None Include="ConsoleApp1\obj\Release\net6.0\ConsoleApp1.AssemblyInfoInputs.cache" />
+    <None Include="ConsoleApp1\obj\Release\net6.0\ConsoleApp1.assets.cache" />
+    <None Include="ConsoleApp1\obj\Release\net6.0\ConsoleApp1.csproj.AssemblyReference.cache" />
+    <None Include="ConsoleApp1\obj\Release\net6.0\ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="Edytor Tekstowy\App.config" />
+    <None Include="Edytor Tekstowy\bin\Debug\Edytor Tekstowy.exe.config" />
+    <None Include="Edytor Tekstowy\Edytor Tekstowy.csproj" />
+    <None Include="Edytor Tekstowy\obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="Edytor Tekstowy\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="Edytor Tekstowy\obj\Debug\Edytor Tekstowy.csproj.AssemblyReference.cache" />
+    <None Include="Edytor Tekstowy\obj\Debug\Edytor Tekstowy.csproj.CoreCompileInputs.cache" />
+    <None Include="Edytor Tekstowy\obj\Debug\Edytor Tekstowy.csproj.GenerateResource.cache" />
+    <None Include="Edytor Tekstowy\obj\Debug\Edytor Tekstowy.csproj.SuggestedBindingRedirects.cache" />
+    <None Include="Edytor Tekstowy\Properties\DataSources\Form1.datasource" />
+    <None Include="Edytor Tekstowy\Properties\Settings.settings" />
+    <None Include="Karty\App.config" />
+    <None Include="Karty\bin\Debug\Karty.exe.config" />
+    <None Include="Karty\Karty.csproj" />
+    <None Include="Karty\obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="Karty\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="Karty\obj\Debug\Karty.csproj.AssemblyReference.cache" />
+    <None Include="Karty\obj\Debug\Karty.csproj.CoreCompileInputs.cache" />
+    <None Include="Karty\obj\Debug\Karty.csproj.GenerateResource.cache" />
+    <None Include="Karty\obj\Debug\Karty.csproj.SuggestedBindingRedirects.cache" />
+    <None Include="Karty\Properties\Settings.settings" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\bin\Debug\net6.0-windows\KosmiciAtakuja.deps.json" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\bin\Debug\net6.0-windows\KosmiciAtakuja.runtimeconfig.json" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\KosmiciAtakuja.csproj" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja.AssemblyInfoInputs.cache" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja.assets.cache" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja.csproj.AssemblyReference.cache" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja.csproj.CoreCompileInputs.cache" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja.designer.deps.json" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja.designer.runtimeconfig.json" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja.genruntimeconfig.cache" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_2nhrxwyq_wpftmp.AssemblyInfoInputs.cache" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_2nhrxwyq_wpftmp.assets.cache" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_2nhrxwyq_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_2t1lpzyk_wpftmp.AssemblyInfoInputs.cache" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_2t1lpzyk_wpftmp.assets.cache" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_2t1lpzyk_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_a3syvbjw_wpftmp.AssemblyInfoInputs.cache" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_a3syvbjw_wpftmp.assets.cache" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_a3syvbjw_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_b4rafsb2_wpftmp.AssemblyInfoInputs.cache" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_b4rafsb2_wpftmp.assets.cache" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_b4rafsb2_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_hsremctc_wpftmp.AssemblyInfoInputs.cache" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_hsremctc_wpftmp.assets.cache" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_hsremctc_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_m4wibq3x_wpftmp.AssemblyInfoInputs.cache" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_m4wibq3x_wpftmp.assets.cache" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_m4wibq3x_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_MarkupCompile.cache" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_MarkupCompile.i.cache" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_MarkupCompile.lref" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_mpqx5bw3_wpftmp.AssemblyInfoInputs.cache" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_mpqx5bw3_wpftmp.assets.cache" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_mpqx5bw3_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_npquhhmq_wpftmp.AssemblyInfoInputs.cache" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_npquhhmq_wpftmp.assets.cache" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_npquhhmq_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_ns311fae_wpftmp.AssemblyInfoInputs.cache" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_ns311fae_wpftmp.assets.cache" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_ns311fae_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_nzjk43ju_wpftmp.AssemblyInfoInputs.cache" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_nzjk43ju_wpftmp.assets.cache" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_nzjk43ju_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_ugknrldi_wpftmp.AssemblyInfoInputs.cache" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_ugknrldi_wpftmp.assets.cache" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_ugknrldi_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_v241ig4r_wpftmp.AssemblyInfoInputs.cache" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_v241ig4r_wpftmp.assets.cache" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_v241ig4r_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_wk02hlh5_wpftmp.AssemblyInfoInputs.cache" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_wk02hlh5_wpftmp.assets.cache" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_wk02hlh5_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_xlg5ci4n_wpftmp.AssemblyInfoInputs.cache" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_xlg5ci4n_wpftmp.assets.cache" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_xlg5ci4n_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_xwgxajp4_wpftmp.AssemblyInfoInputs.cache" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_xwgxajp4_wpftmp.assets.cache" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_xwgxajp4_wpftmp.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\KosmiciAtakuja.csproj.nuget.dgspec.json" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\KosmiciAtakuja.csproj.nuget.g.props" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\KosmiciAtakuja.csproj.nuget.g.targets" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\KosmiciAtakuja_a3syvbjw_wpftmp.csproj.nuget.dgspec.json" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\KosmiciAtakuja_a3syvbjw_wpftmp.csproj.nuget.g.props" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\KosmiciAtakuja_a3syvbjw_wpftmp.csproj.nuget.g.targets" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\KosmiciAtakuja_b4rafsb2_wpftmp.csproj.nuget.dgspec.json" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\KosmiciAtakuja_b4rafsb2_wpftmp.csproj.nuget.g.props" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\KosmiciAtakuja_b4rafsb2_wpftmp.csproj.nuget.g.targets" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\KosmiciAtakuja_hsremctc_wpftmp.csproj.nuget.dgspec.json" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\KosmiciAtakuja_hsremctc_wpftmp.csproj.nuget.g.props" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\KosmiciAtakuja_hsremctc_wpftmp.csproj.nuget.g.targets" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\KosmiciAtakuja_npquhhmq_wpftmp.csproj.nuget.dgspec.json" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\KosmiciAtakuja_npquhhmq_wpftmp.csproj.nuget.g.props" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\KosmiciAtakuja_npquhhmq_wpftmp.csproj.nuget.g.targets" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\KosmiciAtakuja_nzjk43ju_wpftmp.csproj.nuget.dgspec.json" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\KosmiciAtakuja_nzjk43ju_wpftmp.csproj.nuget.g.props" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\KosmiciAtakuja_nzjk43ju_wpftmp.csproj.nuget.g.targets" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\KosmiciAtakuja_xwgxajp4_wpftmp.csproj.nuget.dgspec.json" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\KosmiciAtakuja_xwgxajp4_wpftmp.csproj.nuget.g.props" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\KosmiciAtakuja_xwgxajp4_wpftmp.csproj.nuget.g.targets" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\project.assets.json" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\project.nuget.cache" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\Release\net6.0-windows\KosmiciAtakuja.AssemblyInfoInputs.cache" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\Release\net6.0-windows\KosmiciAtakuja.assets.cache" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\Release\net6.0-windows\KosmiciAtakuja.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\Release\net6.0-windows\KosmiciAtakuja_MarkupCompile.cache" />
+    <None Include="KosmiciAtakuja\KosmiciAtakuja\obj\Release\net6.0-windows\KosmiciAtakuja_MarkupCompile.lref" />
+    <None Include="ListaKaczek\bin\Debug\net6.0\ListaKaczek.deps.json" />
+    <None Include="ListaKaczek\bin\Debug\net6.0\ListaKaczek.runtimeconfig.json" />
+    <None Include="ListaKaczek\ListaKaczek.csproj" />
+    <None Include="ListaKaczek\obj\Debug\net6.0\ListaKaczek.AssemblyInfoInputs.cache" />
+    <None Include="ListaKaczek\obj\Debug\net6.0\ListaKaczek.assets.cache" />
+    <None Include="ListaKaczek\obj\Debug\net6.0\ListaKaczek.csproj.AssemblyReference.cache" />
+    <None Include="ListaKaczek\obj\Debug\net6.0\ListaKaczek.csproj.CoreCompileInputs.cache" />
+    <None Include="ListaKaczek\obj\Debug\net6.0\ListaKaczek.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="ListaKaczek\obj\Debug\net6.0\ListaKaczek.genruntimeconfig.cache" />
+    <None Include="ListaKaczek\obj\ListaKaczek.csproj.nuget.dgspec.json" />
+    <None Include="ListaKaczek\obj\ListaKaczek.csproj.nuget.g.props" />
+    <None Include="ListaKaczek\obj\ListaKaczek.csproj.nuget.g.targets" />
+    <None Include="ListaKaczek\obj\project.assets.json" />
+    <None Include="ListaKaczek\obj\project.nuget.cache" />
+    <None Include="ListaKaczek\obj\Release\net6.0\ListaKaczek.AssemblyInfoInputs.cache" />
+    <None Include="ListaKaczek\obj\Release\net6.0\ListaKaczek.assets.cache" />
+    <None Include="ListaKaczek\obj\Release\net6.0\ListaKaczek.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="Literki\App.config" />
+    <None Include="Literki\bin\Debug\Literki.exe.config" />
+    <None Include="Literki\Literki.csproj" />
+    <None Include="Literki\obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="Literki\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="Literki\obj\Debug\Literki.csproj.AssemblyReference.cache" />
+    <None Include="Literki\obj\Debug\Literki.csproj.CoreCompileInputs.cache" />
+    <None Include="Literki\obj\Debug\Literki.csproj.GenerateResource.cache" />
+    <None Include="Literki\obj\Debug\Literki.csproj.SuggestedBindingRedirects.cache" />
+    <None Include="Literki\Properties\Settings.settings" />
+    <None Include="ModelDomu\App.config" />
+    <None Include="ModelDomu\bin\Debug\ModelDomu.exe.config" />
+    <None Include="ModelDomu\ModelDomu.csproj" />
+    <None Include="ModelDomu\obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="ModelDomu\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="ModelDomu\obj\Debug\ModelDomu.csproj.AssemblyReference.cache" />
+    <None Include="ModelDomu\obj\Debug\ModelDomu.csproj.CoreCompileInputs.cache" />
+    <None Include="ModelDomu\obj\Debug\ModelDomu.csproj.GenerateResource.cache" />
+    <None Include="ModelDomu\obj\Debug\ModelDomu.csproj.SuggestedBindingRedirects.cache" />
+    <None Include="ModelDomu\Properties\Settings.settings" />
+    <None Include="PrzyjęciaKrystyny\App.config" />
+    <None Include="PrzyjęciaKrystyny\bin\Debug\PrzyjęciaKrystyny.exe.config" />
+    <None Include="PrzyjęciaKrystyny\obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="PrzyjęciaKrystyny\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="PrzyjęciaKrystyny\obj\Debug\PrzyjęciaKrystyny.csproj.AssemblyReference.cache" />
+    <None Include="PrzyjęciaKrystyny\obj\Debug\PrzyjęciaKrystyny.csproj.CoreCompileInputs.cache" />
+    <None Include="PrzyjęciaKrystyny\obj\Debug\PrzyjęciaKrystyny.csproj.GenerateResource.cache" />
+    <None Include="PrzyjęciaKrystyny\obj\Debug\PrzyjęciaKrystyny.csproj.SuggestedBindingRedirects.cache" />
+    <None Include="PrzyjęciaKrystyny\Properties\Settings.settings" />
+    <None Include="PrzyjęciaKrystyny\PrzyjęciaKrystyny.csproj" />
+    <None Include="Ul\App.config" />
+    <None Include="Ul\bin\Debug\Ul.exe.config" />
+    <None Include="Ul\obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="Ul\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="Ul\obj\Debug\Ul.csproj.AssemblyReference.cache" />
+    <None Include="Ul\obj\Debug\Ul.csproj.CoreCompileInputs.cache" />
+    <None Include="Ul\obj\Debug\Ul.csproj.GenerateResource.cache" />
+    <None Include="Ul\obj\Debug\Ul.csproj.SuggestedBindingRedirects.cache" />
+    <None Include="Ul\Properties\Settings.settings" />
+    <None Include="Ul\Ul.csproj" />
+    <None Include="WindowsFormsApp1\App.config" />
+    <None Include="WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config" />
+    <None Include="WindowsFormsApp1\obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="WindowsFormsApp1\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache" />
+    <None Include="WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache" />
+    <None Include="WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache" />
+    <None Include="WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.SuggestedBindingRedirects.cache" />
+    <None Include="WindowsFormsApp1\Properties\Settings.settings" />
+    <None Include="WindowsFormsApp1\WindowsFormsApp1.csproj" />
+    <None Include="WindowsFormsApp2\App.config" />
+    <None Include="WindowsFormsApp2\bin\Debug\WindowsFormsApp2.exe.config" />
+    <None Include="WindowsFormsApp2\obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="WindowsFormsApp2\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.AssemblyReference.cache" />
+    <None Include="WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.CoreCompileInputs.cache" />
+    <None Include="WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.GenerateResource.cache" />
+    <None Include="WindowsFormsApp2\obj\Debug\WindowsFormsApp2.csproj.SuggestedBindingRedirects.cache" />
+    <None Include="WindowsFormsApp2\Properties\Settings.settings" />
+    <None Include="WindowsFormsApp2\WindowsFormsApp2.csproj" />
+    <None Include="WindowsFormsApp3\App.config" />
+    <None Include="WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe.config" />
+    <None Include="WindowsFormsApp3\obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="WindowsFormsApp3\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.AssemblyReference.cache" />
+    <None Include="WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.CoreCompileInputs.cache" />
+    <None Include="WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.GenerateResource.cache" />
+    <None Include="WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.SuggestedBindingRedirects.cache" />
+    <None Include="WindowsFormsApp3\Properties\Settings.settings" />
+    <None Include="WindowsFormsApp3\WindowsFormsApp3.csproj" />
+    <None Include="WindowsFormsApp4\App.config" />
+    <None Include="WindowsFormsApp4\obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="WindowsFormsApp4\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="WindowsFormsApp4\obj\Debug\WindowsFormsApp4.csproj.AssemblyReference.cache" />
+    <None Include="WindowsFormsApp4\obj\Release\WindowsFormsApp4.csproj.AssemblyReference.cache" />
+    <None Include="WindowsFormsApp4\Properties\Settings.settings" />
+    <None Include="WindowsFormsApp4\WindowsFormsApp4.csproj" />
+    <None Include="Wyprawa\App.config" />
+    <None Include="Wyprawa\bin\Debug\Wyprawa.exe.config" />
+    <None Include="Wyprawa\obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="Wyprawa\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="Wyprawa\obj\Debug\Wyprawa.csproj.AssemblyReference.cache" />
+    <None Include="Wyprawa\obj\Debug\Wyprawa.csproj.CoreCompileInputs.cache" />
+    <None Include="Wyprawa\obj\Debug\Wyprawa.csproj.GenerateResource.cache" />
+    <None Include="Wyprawa\obj\Debug\Wyprawa.csproj.SuggestedBindingRedirects.cache" />
+    <None Include="Wyprawa\Properties\Settings.settings" />
+    <None Include="Wyprawa\Wyprawa.csproj" />
+    <None Include="Wyścigi Konne\App.config" />
+    <None Include="Wyścigi Konne\bin\Debug\Wyścigi Konne.exe.config" />
+    <None Include="Wyścigi Konne\obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="Wyścigi Konne\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="Wyścigi Konne\obj\Debug\Wyścigi Konne.csproj.AssemblyReference.cache" />
+    <None Include="Wyścigi Konne\obj\Debug\Wyścigi Konne.csproj.CoreCompileInputs.cache" />
+    <None Include="Wyścigi Konne\obj\Debug\Wyścigi Konne.csproj.GenerateResource.cache" />
+    <None Include="Wyścigi Konne\obj\Debug\Wyścigi Konne.csproj.SuggestedBindingRedirects.cache" />
+    <None Include="Wyścigi Konne\Properties\Settings.settings" />
+    <None Include="Wyścigi Konne\Wyścigi Konne.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include=".vs\Aplikacja2\App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include=".vs\Aplikacja2\MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="KosmiciAtakuja\KosmiciAtakuja\App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="KosmiciAtakuja\KosmiciAtakuja\MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include=".vs\Aplikacja2\App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include=".vs\Aplikacja2\AssemblyInfo.cs" />
+    <Compile Include=".vs\Aplikacja2\MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include=".vs\Aplikacja2\obj\Debug\net6.0-windows\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" />
+    <Compile Include=".vs\Aplikacja2\obj\Debug\net6.0-windows\Aplikacja2.AssemblyInfo.cs" />
+    <Compile Include=".vs\Aplikacja2\obj\Debug\net6.0-windows\Aplikacja2_1xe4atw4_wpftmp.AssemblyInfo.cs" />
+    <Compile Include=".vs\Aplikacja2\obj\Debug\net6.0-windows\Aplikacja2_o4tbbwvh_wpftmp.AssemblyInfo.cs" />
+    <Compile Include=".vs\Aplikacja2\obj\Debug\net6.0-windows\Aplikacja2_tiklth4w_wpftmp.AssemblyInfo.cs" />
+    <Compile Include=".vs\Aplikacja2\obj\Debug\net6.0-windows\Aplikacja2_uiqwd1ac_wpftmp.AssemblyInfo.cs" />
+    <Compile Include=".vs\Aplikacja2\obj\Debug\net6.0-windows\Aplikacja2_via2digh_wpftmp.AssemblyInfo.cs" />
+    <Compile Include=".vs\Aplikacja2\obj\Debug\net6.0-windows\Aplikacja2_xer1yrzj_wpftmp.AssemblyInfo.cs" />
+    <Compile Include=".vs\Aplikacja2\obj\Debug\net6.0-windows\Aplikacja2_zryrbi0u_wpftmp.AssemblyInfo.cs" />
+    <Compile Include=".vs\Aplikacja2\obj\Debug\net6.0-windows\App.g.cs" />
+    <Compile Include=".vs\Aplikacja2\obj\Debug\net6.0-windows\App.g.i.cs" />
+    <Compile Include=".vs\Aplikacja2\obj\Debug\net6.0-windows\MainWindow.g.cs" />
+    <Compile Include=".vs\Aplikacja2\obj\Debug\net6.0-windows\MainWindow.g.i.cs" />
+    <Compile Include=".vs\Aplikacja2\obj\Release\net6.0-windows\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" />
+    <Compile Include=".vs\Aplikacja2\obj\Release\net6.0-windows\Aplikacja2.AssemblyInfo.cs" />
+    <Compile Include=".vs\Aplikacja2\obj\Release\net6.0-windows\App.g.cs" />
+    <Compile Include=".vs\Aplikacja2\obj\Release\net6.0-windows\MainWindow.g.cs" />
+    <Compile Include=".vs\Aplikacja3\Form1.cs" />
+    <Compile Include=".vs\Aplikacja3\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include=".vs\Aplikacja3\obj\Debug\net6.0-windows\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" />
+    <Compile Include=".vs\Aplikacja3\obj\Debug\net6.0-windows\Aplikacja3.AssemblyInfo.cs" />
+    <Compile Include=".vs\Aplikacja3\obj\Debug\net6.0-windows\Aplikacja3.GlobalUsings.g.cs" />
+    <Compile Include=".vs\Aplikacja3\Program.cs" />
+    <Compile Include="Aplikacja3 — kopia\Form1.cs" />
+    <Compile Include="Aplikacja3 — kopia\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacja3 — kopia\obj\Debug\net6.0-windows\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" />
+    <Compile Include="Aplikacja3 — kopia\obj\Debug\net6.0-windows\Aplikacja3.AssemblyInfo.cs" />
+    <Compile Include="Aplikacja3 — kopia\obj\Debug\net6.0-windows\Aplikacja3.GlobalUsings.g.cs" />
+    <Compile Include="Aplikacja3 — kopia\obj\Release\net6.0-windows\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" />
+    <Compile Include="Aplikacja3 — kopia\obj\Release\net6.0-windows\Aplikacja3.AssemblyInfo.cs" />
+    <Compile Include="Aplikacja3 — kopia\obj\Release\net6.0-windows\Aplikacja3.GlobalUsings.g.cs" />
+    <Compile Include="Aplikacja3 — kopia\Program.cs" />
+    <Compile Include="Aplikacja3\Form1.cs" />
+    <Compile Include="Aplikacja3\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Aplikacja3\obj\Debug\net6.0-windows\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" />
+    <Compile Include="Aplikacja3\obj\Debug\net6.0-windows\Aplikacja3.AssemblyInfo.cs" />
+    <Compile Include="Aplikacja3\obj\Debug\net6.0-windows\Aplikacja3.GlobalUsings.g.cs" />
+    <Compile Include="Aplikacja3\obj\Release\net6.0-windows\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" />
+    <Compile Include="Aplikacja3\obj\Release\net6.0-windows\Aplikacja3.AssemblyInfo.cs" />
+    <Compile Include="Aplikacja3\obj\Release\net6.0-windows\Aplikacja3.GlobalUsings.g.cs" />
+    <Compile Include="Aplikacja3\Program.cs" />
+    <Compile Include="BarNieChlujnyJanek\Form1.cs" />
+    <Compile Include="BarNieChlujnyJanek\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BarNieChlujnyJanek\obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="BarNieChlujnyJanek\obj\Release\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="BarNieChlujnyJanek\Program.cs" />
+    <Compile Include="BarNieChlujnyJanek\Properties\AssemblyInfo.cs" />
+    <Compile Include="BarNieChlujnyJanek\Properties\Resources.Designer.cs" />
+    <Compile Include="BarNieChlujnyJanek\Properties\Settings.Designer.cs" />
+    <Compile Include="ConsoleApp1\Class1.cs" />
+    <Compile Include="ConsoleApp1\Interface1.cs" />
+    <Compile Include="ConsoleApp1\Interface2.cs" />
+    <Compile Include="ConsoleApp1\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" />
+    <Compile Include="ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.AssemblyInfo.cs" />
+    <Compile Include="ConsoleApp1\obj\Debug\net6.0\ConsoleApp1.GlobalUsings.g.cs" />
+    <Compile Include="ConsoleApp1\obj\Release\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" />
+    <Compile Include="ConsoleApp1\obj\Release\net6.0\ConsoleApp1.AssemblyInfo.cs" />
+    <Compile Include="ConsoleApp1\obj\Release\net6.0\ConsoleApp1.GlobalUsings.g.cs" />
+    <Compile Include="ConsoleApp1\Program.cs" />
+    <Compile Include="Edytor Tekstowy\Class1.cs" />
+    <Compile Include="Edytor Tekstowy\Form1.cs" />
+    <Compile Include="Edytor Tekstowy\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edytor Tekstowy\obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="Edytor Tekstowy\obj\Release\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="Edytor Tekstowy\Program.cs" />
+    <Compile Include="Edytor Tekstowy\Properties\AssemblyInfo.cs" />
+    <Compile Include="Edytor Tekstowy\Properties\Resources.Designer.cs" />
+    <Compile Include="Edytor Tekstowy\Properties\Settings.Designer.cs" />
+    <Compile Include="Karty\Class1.cs" />
+    <Compile Include="Karty\Class2.cs" />
+    <Compile Include="Karty\Form1.cs" />
+    <Compile Include="Karty\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Karty\obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="Karty\obj\Release\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="Karty\Program.cs" />
+    <Compile Include="Karty\Properties\AssemblyInfo.cs" />
+    <Compile Include="Karty\Properties\Resources.Designer.cs" />
+    <Compile Include="Karty\Properties\Settings.Designer.cs" />
+    <Compile Include="KosmiciAtakuja\KosmiciAtakuja\App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="KosmiciAtakuja\KosmiciAtakuja\AssemblyInfo.cs" />
+    <Compile Include="KosmiciAtakuja\KosmiciAtakuja\MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" />
+    <Compile Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\App.g.cs" />
+    <Compile Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\App.g.i.cs" />
+    <Compile Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja.AssemblyInfo.cs" />
+    <Compile Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_2nhrxwyq_wpftmp.AssemblyInfo.cs" />
+    <Compile Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_2t1lpzyk_wpftmp.AssemblyInfo.cs" />
+    <Compile Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_a3syvbjw_wpftmp.AssemblyInfo.cs" />
+    <Compile Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_b4rafsb2_wpftmp.AssemblyInfo.cs" />
+    <Compile Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_hsremctc_wpftmp.AssemblyInfo.cs" />
+    <Compile Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_m4wibq3x_wpftmp.AssemblyInfo.cs" />
+    <Compile Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_mpqx5bw3_wpftmp.AssemblyInfo.cs" />
+    <Compile Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_npquhhmq_wpftmp.AssemblyInfo.cs" />
+    <Compile Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_ns311fae_wpftmp.AssemblyInfo.cs" />
+    <Compile Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_nzjk43ju_wpftmp.AssemblyInfo.cs" />
+    <Compile Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_ugknrldi_wpftmp.AssemblyInfo.cs" />
+    <Compile Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_v241ig4r_wpftmp.AssemblyInfo.cs" />
+    <Compile Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_wk02hlh5_wpftmp.AssemblyInfo.cs" />
+    <Compile Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_xlg5ci4n_wpftmp.AssemblyInfo.cs" />
+    <Compile Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja_xwgxajp4_wpftmp.AssemblyInfo.cs" />
+    <Compile Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\MainWindow.g.cs" />
+    <Compile Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\MainWindow.g.i.cs" />
+    <Compile Include="KosmiciAtakuja\KosmiciAtakuja\obj\Release\net6.0-windows\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" />
+    <Compile Include="KosmiciAtakuja\KosmiciAtakuja\obj\Release\net6.0-windows\App.g.cs" />
+    <Compile Include="KosmiciAtakuja\KosmiciAtakuja\obj\Release\net6.0-windows\KosmiciAtakuja.AssemblyInfo.cs" />
+    <Compile Include="KosmiciAtakuja\KosmiciAtakuja\obj\Release\net6.0-windows\MainWindow.g.cs" />
+    <Compile Include="ListaKaczek\Class1.cs" />
+    <Compile Include="ListaKaczek\obj\Debug\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" />
+    <Compile Include="ListaKaczek\obj\Debug\net6.0\ListaKaczek.AssemblyInfo.cs" />
+    <Compile Include="ListaKaczek\obj\Debug\net6.0\ListaKaczek.GlobalUsings.g.cs" />
+    <Compile Include="ListaKaczek\obj\Release\net6.0\.NETCoreApp,Version=v6.0.AssemblyAttributes.cs" />
+    <Compile Include="ListaKaczek\obj\Release\net6.0\ListaKaczek.AssemblyInfo.cs" />
+    <Compile Include="ListaKaczek\obj\Release\net6.0\ListaKaczek.GlobalUsings.g.cs" />
+    <Compile Include="ListaKaczek\Program.cs" />
+    <Compile Include="Literki\Form1.cs" />
+    <Compile Include="Literki\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Literki\obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="Literki\obj\Release\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="Literki\Program.cs" />
+    <Compile Include="Literki\Properties\AssemblyInfo.cs" />
+    <Compile Include="Literki\Properties\Resources.Designer.cs" />
+    <Compile Include="Literki\Properties\Settings.Designer.cs" />
+    <Compile Include="ModelDomu\Class1.cs" />
+    <Compile Include="ModelDomu\Class2.cs" />
+    <Compile Include="ModelDomu\Form1.cs" />
+    <Compile Include="ModelDomu\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModelDomu\FormBase.cs" />
+    <Compile Include="ModelDomu\Interface1.cs" />
+    <Compile Include="ModelDomu\obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="ModelDomu\obj\Release\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="ModelDomu\Program.cs" />
+    <Compile Include="ModelDomu\Properties\AssemblyInfo.cs" />
+    <Compile Include="ModelDomu\Properties\Resources.Designer.cs" />
+    <Compile Include="ModelDomu\Properties\Settings.Designer.cs" />
+    <Compile Include="PrzyjęciaKrystyny\Form1.cs" />
+    <Compile Include="PrzyjęciaKrystyny\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrzyjęciaKrystyny\obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="PrzyjęciaKrystyny\obj\Release\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="PrzyjęciaKrystyny\Program.cs" />
+    <Compile Include="PrzyjęciaKrystyny\Properties\AssemblyInfo.cs" />
+    <Compile Include="PrzyjęciaKrystyny\Properties\Resources.Designer.cs" />
+    <Compile Include="PrzyjęciaKrystyny\Properties\Settings.Designer.cs" />
+    <Compile Include="Ul\Form1.cs" />
+    <Compile Include="Ul\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ul\obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="Ul\obj\Release\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="Ul\Program.cs" />
+    <Compile Include="Ul\Properties\AssemblyInfo.cs" />
+    <Compile Include="Ul\Properties\Resources.Designer.cs" />
+    <Compile Include="Ul\Properties\Settings.Designer.cs" />
+    <Compile Include="WindowsFormsApp1\Form1.cs" />
+    <Compile Include="WindowsFormsApp1\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowsFormsApp1\obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="WindowsFormsApp1\obj\Release\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="WindowsFormsApp1\Program.cs" />
+    <Compile Include="WindowsFormsApp1\Properties\AssemblyInfo.cs" />
+    <Compile Include="WindowsFormsApp1\Properties\Resources.Designer.cs" />
+    <Compile Include="WindowsFormsApp1\Properties\Settings.Designer.cs" />
+    <Compile Include="WindowsFormsApp2\Form1.cs" />
+    <Compile Include="WindowsFormsApp2\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowsFormsApp2\obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="WindowsFormsApp2\obj\Release\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="WindowsFormsApp2\Program.cs" />
+    <Compile Include="WindowsFormsApp2\Properties\AssemblyInfo.cs" />
+    <Compile Include="WindowsFormsApp2\Properties\Resources.Designer.cs" />
+    <Compile Include="WindowsFormsApp2\Properties\Settings.Designer.cs" />
+    <Compile Include="WindowsFormsApp3\Form1.cs" />
+    <Compile Include="WindowsFormsApp3\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowsFormsApp3\obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="WindowsFormsApp3\obj\Release\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="WindowsFormsApp3\Program.cs" />
+    <Compile Include="WindowsFormsApp3\Properties\AssemblyInfo.cs" />
+    <Compile Include="WindowsFormsApp3\Properties\Resources.Designer.cs" />
+    <Compile Include="WindowsFormsApp3\Properties\Settings.Designer.cs" />
+    <Compile Include="WindowsFormsApp4\Form1.cs" />
+    <Compile Include="WindowsFormsApp4\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowsFormsApp4\obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="WindowsFormsApp4\obj\Release\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="WindowsFormsApp4\Program.cs" />
+    <Compile Include="WindowsFormsApp4\Properties\AssemblyInfo.cs" />
+    <Compile Include="WindowsFormsApp4\Properties\Resources.Designer.cs" />
+    <Compile Include="WindowsFormsApp4\Properties\Settings.Designer.cs" />
+    <Compile Include="Wyprawa\Class1.cs" />
+    <Compile Include="Wyprawa\Class2.cs" />
+    <Compile Include="Wyprawa\Form1.cs" />
+    <Compile Include="Wyprawa\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wyprawa\obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="Wyprawa\obj\Release\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="Wyprawa\Program.cs" />
+    <Compile Include="Wyprawa\Properties\AssemblyInfo.cs" />
+    <Compile Include="Wyprawa\Properties\Resources.Designer.cs" />
+    <Compile Include="Wyprawa\Properties\Settings.Designer.cs" />
+    <Compile Include="Wyścigi Konne\Form1.cs" />
+    <Compile Include="Wyścigi Konne\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wyścigi Konne\obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="Wyścigi Konne\obj\Release\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="Wyścigi Konne\Program.cs" />
+    <Compile Include="Wyścigi Konne\Properties\AssemblyInfo.cs" />
+    <Compile Include="Wyścigi Konne\Properties\Resources.Designer.cs" />
+    <Compile Include="Wyścigi Konne\Properties\Settings.Designer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include=".vs\Aplikacja2\obj\Debug\net6.0-windows\Aplikacja2.g.resources" />
+    <EmbeddedResource Include="BarNieChlujnyJanek\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BarNieChlujnyJanek\obj\Debug\BarNieChlujnyJanek.Form1.resources" />
+    <EmbeddedResource Include="BarNieChlujnyJanek\obj\Debug\BarNieChlujnyJanek.Properties.Resources.resources" />
+    <EmbeddedResource Include="BarNieChlujnyJanek\Properties\Resources.resx" />
+    <EmbeddedResource Include="Edytor Tekstowy\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edytor Tekstowy\obj\Debug\Edytor_Tekstowy.Form1.resources" />
+    <EmbeddedResource Include="Edytor Tekstowy\obj\Debug\Edytor_Tekstowy.Properties.Resources.resources" />
+    <EmbeddedResource Include="Edytor Tekstowy\Properties\Resources.resx" />
+    <EmbeddedResource Include="Karty\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Karty\obj\Debug\Karty.Form1.resources" />
+    <EmbeddedResource Include="Karty\obj\Debug\Karty.Properties.Resources.resources" />
+    <EmbeddedResource Include="Karty\Properties\Resources.resx" />
+    <EmbeddedResource Include="KosmiciAtakuja\KosmiciAtakuja\obj\Debug\net6.0-windows\KosmiciAtakuja.g.resources" />
+    <EmbeddedResource Include="Literki\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Literki\obj\Debug\Literki.Form1.resources" />
+    <EmbeddedResource Include="Literki\obj\Debug\Literki.Properties.Resources.resources" />
+    <EmbeddedResource Include="Literki\Properties\Resources.resx" />
+    <EmbeddedResource Include="ModelDomu\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModelDomu\obj\Debug\ModelDomu.Form1.resources" />
+    <EmbeddedResource Include="ModelDomu\obj\Debug\ModelDomu.Properties.Resources.resources" />
+    <EmbeddedResource Include="ModelDomu\Properties\Resources.resx" />
+    <EmbeddedResource Include="PrzyjęciaKrystyny\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrzyjęciaKrystyny\obj\Debug\PrzyjęciaKrystyny.Form1.resources" />
+    <EmbeddedResource Include="PrzyjęciaKrystyny\obj\Debug\PrzyjęciaKrystyny.Properties.Resources.resources" />
+    <EmbeddedResource Include="PrzyjęciaKrystyny\Properties\Resources.resx" />
+    <EmbeddedResource Include="Ul\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ul\obj\Debug\Ul.Form1.resources" />
+    <EmbeddedResource Include="Ul\obj\Debug\Ul.Properties.Resources.resources" />
+    <EmbeddedResource Include="Ul\Properties\Resources.resx" />
+    <EmbeddedResource Include="WindowsFormsApp1\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources" />
+    <EmbeddedResource Include="WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources" />
+    <EmbeddedResource Include="WindowsFormsApp1\Properties\Resources.resx" />
+    <EmbeddedResource Include="WindowsFormsApp2\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Form1.resources" />
+    <EmbeddedResource Include="WindowsFormsApp2\obj\Debug\WindowsFormsApp2.Properties.Resources.resources" />
+    <EmbeddedResource Include="WindowsFormsApp2\Properties\Resources.resx" />
+    <EmbeddedResource Include="WindowsFormsApp3\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Form1.resources" />
+    <EmbeddedResource Include="WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Properties.Resources.resources" />
+    <EmbeddedResource Include="WindowsFormsApp3\Properties\Resources.resx" />
+    <EmbeddedResource Include="WindowsFormsApp4\Properties\Resources.resx" />
+    <EmbeddedResource Include="Wyprawa\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wyprawa\obj\Debug\Wyprawa.Form1.resources" />
+    <EmbeddedResource Include="Wyprawa\obj\Debug\Wyprawa.Properties.Resources.resources" />
+    <EmbeddedResource Include="Wyprawa\Properties\Resources.resx" />
+    <EmbeddedResource Include="Wyścigi Konne\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wyścigi Konne\obj\Debug\Wyścigi_Konne.Form1.resources" />
+    <EmbeddedResource Include="Wyścigi Konne\obj\Debug\Wyścigi_Konne.Properties.Resources.resources" />
+    <EmbeddedResource Include="Wyścigi Konne\Properties\Resources.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".git\objects\info\" />
+    <Folder Include=".git\objects\pack\" />
+    <Folder Include=".git\refs\tags\" />
+    <Folder Include=".vs\Aplikacja2\bin\Release\net6.0-windows\ref\" />
+    <Folder Include=".vs\Aplikacja2\obj\Release\net6.0-windows\ref\" />
+    <Folder Include=".vs\Aplikacja3\bin\Debug\net6.0-windows\ref\" />
+    <Folder Include=".vs\Aplikacja3\obj\Debug\net6.0-windows\ref\" />
+    <Folder Include="Aplikacja3 — kopia\bin\Debug\net6.0-windows\ref\" />
+    <Folder Include="Aplikacja3 — kopia\bin\Release\net6.0-windows\ref\" />
+    <Folder Include="Aplikacja3 — kopia\obj\Debug\net6.0-windows\ref\" />
+    <Folder Include="Aplikacja3 — kopia\obj\Release\net6.0-windows\ref\" />
+    <Folder Include="Aplikacja3\bin\Debug\net6.0-windows\ref\" />
+    <Folder Include="Aplikacja3\bin\Release\net6.0-windows\ref\" />
+    <Folder Include="Aplikacja3\obj\Debug\net6.0-windows\ref\" />
+    <Folder Include="Aplikacja3\obj\Release\net6.0-windows\ref\" />
+    <Folder Include="BarNieChlujnyJanek\bin\Release\" />
+    <Folder Include="BarNieChlujnyJanek\obj\Debug\TempPE\" />
+    <Folder Include="ConsoleApp1\bin\Release\net6.0\ref\" />
+    <Folder Include="ConsoleApp1\obj\Release\net6.0\ref\" />
+    <Folder Include="Edytor Tekstowy\bin\Release\" />
+    <Folder Include="Edytor Tekstowy\obj\Debug\TempPE\" />
+    <Folder Include="Karty\bin\Release\" />
+    <Folder Include="Karty\obj\Debug\TempPE\" />
+    <Folder Include="KosmiciAtakuja\KosmiciAtakuja\bin\Release\net6.0-windows\ref\" />
+    <Folder Include="KosmiciAtakuja\KosmiciAtakuja\obj\Release\net6.0-windows\ref\" />
+    <Folder Include="ListaKaczek\bin\Release\net6.0\ref\" />
+    <Folder Include="ListaKaczek\obj\Release\net6.0\ref\" />
+    <Folder Include="Literki\bin\Release\" />
+    <Folder Include="Literki\obj\Debug\TempPE\" />
+    <Folder Include="ModelDomu\bin\Release\" />
+    <Folder Include="ModelDomu\obj\Debug\TempPE\" />
+    <Folder Include="PrzyjęciaKrystyny\bin\Release\" />
+    <Folder Include="PrzyjęciaKrystyny\obj\Debug\TempPE\" />
+    <Folder Include="Ul\bin\Release\" />
+    <Folder Include="Ul\obj\Debug\TempPE\" />
+    <Folder Include="WindowsFormsApp1\bin\Release\" />
+    <Folder Include="WindowsFormsApp1\obj\Debug\TempPE\" />
+    <Folder Include="WindowsFormsApp2\bin\Release\" />
+    <Folder Include="WindowsFormsApp2\obj\Debug\TempPE\" />
+    <Folder Include="WindowsFormsApp3\bin\Release\" />
+    <Folder Include="WindowsFormsApp3\obj\Debug\TempPE\" />
+    <Folder Include="WindowsFormsApp4\bin\Debug\" />
+    <Folder Include="WindowsFormsApp4\bin\Release\" />
+    <Folder Include="WindowsFormsApp4\obj\Debug\TempPE\" />
+    <Folder Include="Wyprawa\bin\Release\" />
+    <Folder Include="Wyprawa\obj\Debug\TempPE\" />
+    <Folder Include="Wyścigi Konne\bin\Release\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
