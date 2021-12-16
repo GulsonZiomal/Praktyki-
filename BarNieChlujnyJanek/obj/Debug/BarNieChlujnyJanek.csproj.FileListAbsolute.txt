@@ -1,4 +1,3 @@
-C:\Users\wegne\source\repos\GulsonZiomal\Praktyki-\BarNieChlujnyJanek\obj\Debug\BarNieChlujnyJanek.csproj.AssemblyReference.cache
 C:\Users\wegne\source\repos\GulsonZiomal\Praktyki-\BarNieChlujnyJanek\obj\Debug\BarNieChlujnyJanek.csproj.SuggestedBindingRedirects.cache
 C:\Users\wegne\source\repos\GulsonZiomal\Praktyki-\BarNieChlujnyJanek\obj\Debug\BarNieChlujnyJanek.Form1.resources
 C:\Users\wegne\source\repos\GulsonZiomal\Praktyki-\BarNieChlujnyJanek\obj\Debug\BarNieChlujnyJanek.Properties.Resources.resources
