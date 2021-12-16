@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.button1 = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveButton = new System.Windows.Forms.Button();
             this.coWPliku = new System.Windows.Forms.RichTextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -42,6 +42,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.znaleziono = new System.Windows.Forms.RichTextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.form1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.form1BindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -76,18 +79,10 @@
             this.coWPliku.TabIndex = 4;
             this.coWPliku.Text = "";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(10, 507);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 16);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Ilość linii: ";
-            // 
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
+            this.radioButton1.Checked = true;
             this.radioButton1.Location = new System.Drawing.Point(794, 43);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(109, 20);
@@ -103,7 +98,6 @@
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(207, 20);
             this.radioButton2.TabIndex = 9;
-            this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Znajdź i zamień słowo na inne";
             this.radioButton2.UseVisualStyleBackColor = true;
             this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
@@ -161,11 +155,27 @@
             this.znaleziono.TabIndex = 15;
             this.znaleziono.Text = "";
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Strona numer: 1"});
+            this.comboBox1.Location = new System.Drawing.Point(111, 13);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(196, 24);
+            this.comboBox1.TabIndex = 16;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // form1BindingSource
+            // 
+            this.form1BindingSource.DataSource = typeof(Edytor_Tekstowy.Form1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1165, 532);
+            this.ClientSize = new System.Drawing.Size(1165, 516);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.znaleziono);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label3);
@@ -174,12 +184,12 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.coWPliku);
             this.Controls.Add(this.saveButton);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.form1BindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -192,7 +202,6 @@
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Button saveButton;
         private System.Windows.Forms.RichTextBox coWPliku;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.TextBox textBox1;
@@ -201,6 +210,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.RichTextBox znaleziono;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.BindingSource form1BindingSource;
     }
 }
 

@@ -18,15 +18,14 @@ namespace Edytor_Tekstowy
             InitializeComponent();
         }
 
-        string filePath = string.Empty;
-        int counter = 0;
-        string[] line = new string[1000];
+        List<Tekst> tekst = new List<Tekst>();
 
-        private void button1_Click(object sender, EventArgs e)
+        string filePath = string.Empty;
+        static int counter;
+        public void button1_Click(object sender, EventArgs e)
         {
             var fileContent = string.Empty;
-            OpenFileDialog ofd = new OpenFileDialog();
-
+            OpenFileDialog ofd = new OpenFileDialog();            
             ofd.InitialDirectory = "c:\\";
             ofd.FilterIndex = 2;
             ofd.RestoreDirectory = true;
@@ -39,75 +38,92 @@ namespace Edytor_Tekstowy
 
                 using (StreamReader reader = new StreamReader(fileStream))
                 {
-                    fileContent = reader.ReadToEnd();
-                }
-            }
-            var name = filePath.Split('.');
-            if (name[1] == "txt")
-            {
-                using (StreamReader file = new StreamReader(ofd.FileName))
-                {
-                    coWPliku.Text = "";
+                    int Strona = 1;
                     string ln;
-
-                    while ((ln = file.ReadLine()) != null && counter < 1000)
+                    while ((ln = reader.ReadLine()) != null)
                     {
-                        line[counter] = ln;
-                        coWPliku.Text += line[counter] + "\n";
                         counter++;
-                    }
-                    file.Close();
-                    label1.Text += counter;
+                        if(counter<1000)
+                        {
+                            coWPliku.Text += ln + "\n";
+                        }
+                        tekst.Add(new Tekst() {linia = ln});
+                        if(counter%1000 == 0)
+                        {
+                            Strona++;
+                            comboBox1.Items.Add("Strona numer: " + Strona);
+                        }
+                    }   
                 }
             }
-            else MessageBox.Show("Możesz dodać tylko plik txt");
         }
 
-        private void saveButton_Click(object sender, EventArgs e)
-        {
-            using (StreamWriter writer = File.CreateText(filePath))
+        
+            private void saveButton_Click(object sender, EventArgs e)
             {
-                writer.WriteLine(coWPliku.Text);
+                using (StreamWriter writer = File.CreateText(filePath))
+                {
+                    for(int i = 0; i<tekst.Count; i++)
+                    {
+                    writer.WriteLine(tekst[i].linia);
+                }
+                }
             }
 
-        }
-
-        private void radioButton2_CheckedChanged(object sender, EventArgs e)
-        {
-            if (label3.Visible == false)
+            private void radioButton2_CheckedChanged(object sender, EventArgs e)
             {
+                if(radioButton2.Checked == true)
+                {
                 label3.Visible = true;
                 textBox2.Visible = true;
-            }
-            else
-            {
-                textBox2.Visible = false;
-                label3.Visible = false;
-            }
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            if (radioButton2.Checked == false && radioButton1.Checked == true)
-            {
-                znaleziono.Text = "Wyrażenia w linijce/kach: ";
-                for (int i = 0; i < counter; i++)
+                }
+                else
                 {
-                    if (line[i].IndexOf(textBox1.Text, 0, line[i].Length) != -1)
+                label3.Visible = false;
+                textBox2.Visible = false;
+            }
+            }
+
+            private void button2_Click(object sender, EventArgs e)
+            {
+            coWPliku.Text = "";
+            if (radioButton1.Checked == true)
+            {
+                int j = 0;
+                int linijka;
+                for(int i = 0; i<tekst.Count; i++)
+                {
+                    if(tekst[i].linia.IndexOf(textBox1.Text, 0, tekst[i].linia.Length) != -1)
                     {
-                        int j = i + 1;
-                        znaleziono.Text += " " + j;
+                        if (i > 999)
+                            j = i / 1000;
+                        linijka = i - (j * 1000) + 1;
+                        znaleziono.Text += "linijka: " + (linijka) + " strona nr: "+(j+1)+"\n";
                     }
                 }
             }
             else
             {
-                coWPliku.Text = "";
-                for (int i = 0; i < counter; i++)
+                for (int i = 0; i < tekst.Count; i++)
                 {
-                    var replacement = line[i].Replace(textBox1.Text, textBox2.Text);
-                    line[i] = replacement;
-                    coWPliku.Text += (replacement) + "\n";
+                    var replacement = tekst[i].linia.Replace(textBox1.Text, textBox2.Text);
+                    tekst[i].linia = replacement;
+                    if(i<1000)
+                        coWPliku.Text += (replacement) + "\n";
+                }
+            }
+            }
+
+            private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+            {
+
+            coWPliku.Text = "";
+            for (int i = 1; i<=1000; i++)
+            {
+                int index = (comboBox1.SelectedIndex * 1000) + i;
+                if (tekst.Count > index)
+                {
+                    coWPliku.Text += tekst[index].linia + "\n";
                 }
             }
         }
