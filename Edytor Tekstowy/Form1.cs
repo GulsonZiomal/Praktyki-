@@ -18,17 +18,14 @@ namespace Edytor_Tekstowy
             InitializeComponent();
         }
 
+        List<Tekst> tekst = new List<Tekst>();
+
         string filePath = string.Empty;
-        int counter = 0;
-        static int j;
-        int p = 0;
-        string[,] line;
-        
+        static int counter;
         public void button1_Click(object sender, EventArgs e)
         {
             var fileContent = string.Empty;
-            OpenFileDialog ofd = new OpenFileDialog();
-
+            OpenFileDialog ofd = new OpenFileDialog();            
             ofd.InitialDirectory = "c:\\";
             ofd.FilterIndex = 2;
             ofd.RestoreDirectory = true;
@@ -41,133 +38,94 @@ namespace Edytor_Tekstowy
 
                 using (StreamReader reader = new StreamReader(fileStream))
                 {
-                    fileContent = reader.ReadToEnd();
-                }
-            }
-            using (StreamReader file = new StreamReader(ofd.FileName))
-            {
-                coWPliku.Text = "";
-                counter = 0;
-                while ((file.ReadLine()) != null)
-                {
-                    counter++;
-                }
-                j = counter / 1000 + 1;
-                line = new string[1000, j];
-                counter = 0;
-                progressBar1.Maximum = (int)j-1;
-                progressBar1.Minimum = 0;
-                progressBar1.Step = 1;
-                foreach (string ln in System.IO.File.ReadLines(filePath))
-                {
-                    if(p == 0)
-                        coWPliku.Text += ln + "\n";
-                    line[counter, p] = ln;
-                    counter++;
-                    
-                    if (counter == 999)
+                    int Strona = 1;
+                    string ln;
+                    while ((ln = reader.ReadLine()) != null)
                     {
-                        counter = 0;
-                        p++;
-                        comboBox1.Items.Add("Strona numer: " + (p + 1));
-                        progressBar1.PerformStep();
-                    }
+                        counter++;
+                        if(counter<1000)
+                        {
+                            coWPliku.Text += ln + "\n";
+                        }
+                        tekst.Add(new Tekst() {linia = ln});
+                        if(counter%1000 == 0)
+                        {
+                            Strona++;
+                            comboBox1.Items.Add("Strona numer: " + Strona);
+                        }
+                    }   
                 }
-                progressBar1.Value=0;
-                file.Close();
-                
             }
         }
 
         
             private void saveButton_Click(object sender, EventArgs e)
             {
-            using (StreamWriter writer = File.CreateText(filePath))
-            {
-                progressBar1.Maximum = (int)j - 1;
-                progressBar1.Minimum = 0;
-                progressBar1.Step = 1;
-                for (int w = 0; w < j; w++)
+                using (StreamWriter writer = File.CreateText(filePath))
                 {
-                    progressBar1.PerformStep();
-                    for (int i = 0; i < 1000; i++)
+                    for(int i = 0; i<tekst.Count; i++)
                     {
-                        writer.WriteLine(line[i, w]);
-                    }
+                    writer.WriteLine(tekst[i].linia);
                 }
-                progressBar1.Value = 0;
-            }
-
+                }
             }
 
             private void radioButton2_CheckedChanged(object sender, EventArgs e)
             {
-                if (label3.Visible == false)
+                if(radioButton2.Checked == true)
                 {
-                    label3.Visible = true;
-                    textBox2.Visible = true;
+                label3.Visible = true;
+                textBox2.Visible = true;
                 }
                 else
                 {
-                    textBox2.Visible = false;
-                    label3.Visible = false;
-                }
+                label3.Visible = false;
+                textBox2.Visible = false;
+            }
             }
 
             private void button2_Click(object sender, EventArgs e)
             {
-            progressBar1.Maximum = (int)j - 1;
-            progressBar1.Minimum = 0;
-            progressBar1.Step = 1;
-            if (radioButton2.Checked == false && radioButton1.Checked == true)
-                {
-                    znaleziono.Text = "Wyrażenia w linijce/kach: ";
-                    for (int k = 0; k < j; k++)
-                    {
-                    progressBar1.PerformStep();
-                    znaleziono.Text += "\n";
-                        for (int i = 0; i < 1000; i++)
-                        {
-                            if (line[i, k].IndexOf(textBox1.Text, 0, line[i, k].Length) != -1)
-                            {
-                                int x = i + 1;
-                                znaleziono.Text += " linijka: " + x + " podstrona " + (k+1)+",";
-
-                            }
-                        }
-                    }
-                progressBar1.Value = 0;
-            }
-                else
-                {
-                    coWPliku.Text = "";
-                    for (int k = 0; k < j;)
-                    {
-                    progressBar1.PerformStep();
-                    for (int i = 0; i < counter; i++)
-                        {
-                            var replacement = line[i, k].Replace(textBox1.Text, textBox2.Text);
-                            line[i, k] = replacement;
-                            coWPliku.Text += (replacement) + "\n";
-                        }
-                    }
-                progressBar1.Value = 0;
-            }
-            }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        { 
             coWPliku.Text = "";
-            int s = comboBox1.SelectedIndex;
-            progressBar1.Maximum = 999;
-            progressBar1.Minimum = 0;
-            progressBar1.Step = 1;
-            for (int i = 0; i < 1000; i++)
+            if (radioButton1.Checked == true)
             {
-                coWPliku.Text += line[i, s]+"\n";
-                progressBar1.PerformStep();
+                int j = 0;
+                int linijka;
+                for(int i = 0; i<tekst.Count; i++)
+                {
+                    if(tekst[i].linia.IndexOf(textBox1.Text, 0, tekst[i].linia.Length) != -1)
+                    {
+                        if (i > 999)
+                            j = i / 1000;
+                        linijka = i - (j * 1000) + 1;
+                        znaleziono.Text += "linijka: " + (linijka) + " strona nr: "+(j+1)+"\n";
+                    }
+                }
             }
-            progressBar1.Value = 0;
+            else
+            {
+                for (int i = 0; i < tekst.Count; i++)
+                {
+                    var replacement = tekst[i].linia.Replace(textBox1.Text, textBox2.Text);
+                    tekst[i].linia = replacement;
+                    if(i<1000)
+                        coWPliku.Text += (replacement) + "\n";
+                }
+            }
+            }
+
+            private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+            {
+
+            coWPliku.Text = "";
+            for (int i = 1; i<=1000; i++)
+            {
+                int index = (comboBox1.SelectedIndex * 1000) + i;
+                if (tekst.Count > index)
+                {
+                    coWPliku.Text += tekst[index].linia + "\n";
+                }
+            }
         }
     }
 }
