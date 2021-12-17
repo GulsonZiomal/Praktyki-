@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31919.166
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Edytor Tekstowy", "Edytor Tekstowy.csproj", "{8C5F6793-4C87-4A16-BB50-9729388E6376}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test Edytor Tekstu", "..\Test Edytor Tekstu\Test Edytor Tekstu.csproj", "{7541AB7F-AA79-4C54-902E-3758BA15FD1A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{8C5F6793-4C87-4A16-BB50-9729388E6376}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C5F6793-4C87-4A16-BB50-9729388E6376}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C5F6793-4C87-4A16-BB50-9729388E6376}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7541AB7F-AA79-4C54-902E-3758BA15FD1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7541AB7F-AA79-4C54-902E-3758BA15FD1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7541AB7F-AA79-4C54-902E-3758BA15FD1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7541AB7F-AA79-4C54-902E-3758BA15FD1A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
